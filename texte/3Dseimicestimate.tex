@@ -222,18 +222,19 @@ H_{u,1}(f)&0&0
 0&0&H_{u,3}(f)
 \end{bmatrix}
 \end{eqnarray*}
-and where $V_{u}$ is the square matrix whose entries are $v_{u,k}$. Because the columns of $V_{u}$ are normalized, $V_{u}$ depends on 6 free parameters. A possible parametrization is:
+and where $V_{u}$ is the square matrix whose entries are $v_{u,k}$. Because the columns of $V_{u}$ are normalized, $V_{u}$ depends on 6 free parameters. A possible parametrization in an arbitrary orthonormal coordinate system is:
 \begin{eqnarray}
 \label{eq:parametricformofV}
-V_{u}(\phi)&=&
+V(\phi_{u})&=&
 \begin{bmatrix}
-\cos(a_{1})\cos(e_{1})&\sin(a_{1})\cos(e_{1})&\sin(e_{1})
+\cos(a_{u,1})\cos(e_{u,1})&\sin(a_{u,1})\cos(e_{u,1})&\sin(e_{u,1})
 \\
-\cos(a_{2})\cos(e_{2})&\sin(a_{2})\cos(e_{2})&\sin(e_{2})
+\cos(a_{u,2})\cos(e_{u,2})&\sin(a_{u,2})\cos(e_{u,2})&\sin(e_{u,2})
 \\
-\cos(a_{3})\cos(e_{3})&\sin(a_{3})\cos(e_{3})&\sin(e_{3})
+\cos(a_{u,3})\cos(e_{u,3})&\sin(a_{u,3})\cos(e_{u,3})&\sin(e_{u,3})
 \end{bmatrix}
 \end{eqnarray}
+where $\phi_{u}=(a_{u,1},a_{u,2},a_{u,3},e_{u,1},e_{u,2},e_{u,3})\in\Phi= (0,2\pi)^{\otimes 3}\times (0,\pi)^{\otimes 3}$
 
 In our protocol, the  reference system (SREF) is a portable seismic device whose the trihedron  is perfectly known. 
 Therefore we have in the absence of noise:
@@ -241,14 +242,14 @@ Therefore we have in the absence of noise:
 \label{eq:signalmodel}
 \left\{
 \begin{array}{rcl}
-X_{u}(f)&=&H_{u}(f)V_{u}G(f)
+X_{u}(f)&=&H_{u}(f)V(\phi_{u})G(f)
 \\
-X_{r}(f)&=&H_{r}(f)V_{r}G(f)
+X_{r}(f)&=&H_{r}(f)V(\phi_{r})G(f)
 \end{array}
 \right.
 \end{eqnarray}
 
-The objective is to estimate the matrix $V_{u}$, knowing $H_{r}(f)$ and observing $X_{u}(f)$ and $X_{r}(f)$.
+The objective is to estimate $\phi_{u}$, knowing $H_{r}(f)$,  $\phi_{r}$, $H_{u}(f)$ and observing $X_{u}(f)$ and $X_{r}(f)$.
 More specifically we can estimate the product $H_{u}(f)V_{u}$, but in the absence of a priori knowledge it is impossible to solve separately $H_{u}(f)$ and $V_{u}$.
 
 
@@ -258,27 +259,86 @@ More specifically we can estimate the product $H_{u}(f)V_{u}$, but in the absenc
 %=====================================
 In this section we assume that we know the response $H_{u}(f)$ of the SUT. Then solving the second equation of \eqref{eq:signalmodel} w.r.t. $G(f)$, we get:
 \begin{eqnarray*}
-X_{u}(f)&=&H_{u}(f)V_{u}V_{r} ^{-1}H_{r}^{-1}(f)X_{r}(f)
+X_{u}(f)&=&H_{u}(f)V(\phi_{u})V ^{-1}(\phi_{r})H_{r}^{-1}(f)X_{r}(f)
 \end{eqnarray*}
 It is worth to notice that integrating w.r.t. $f$ leads
 \begin{eqnarray*}
-\sum H_{u}^{-1}(f)X_{u}(f)X_{u}^{H}(f)&=&V_{u}V_{r} ^{-1}\sum H_{r}^{-1}(f)X_{r}(f)X_{u}^{H}(f)
+\sum H_{u}^{-1}(f)X_{u}(f)X_{u}^{H}(f)&=&V(\phi_{u})V^{-1}(\phi_{r})\sum H_{r}^{-1}(f)X_{r}(f)X_{u}^{H}(f)
 \end{eqnarray*}
 
-We let 
+We let the 3 dimensional matrix:
 \begin{eqnarray*}
-S_{uu}&=&\sum H_{u}^{-1}(f)X_{u}(f)X_{u}^{H}(f)
+S_{uu}&=&\sum_{f} H_{u}^{-1}(f)X_{u}(f)X_{u}^{H}(f)
+\end{eqnarray*}
+the 3 dimensional matrix
+\begin{eqnarray*}
+S_{ru}&=&\sum_{f} H_{r}^{-1}(f)X_{r}(f)X_{u}^{H}(f)
+\end{eqnarray*}
+and the cost function
+\begin{eqnarray*}
+J(\phi) &=&  \|S_{uu} - V(\phi)V^{-1}(\phi_{r})S_{ru}\|_{F}^{2}
+\end{eqnarray*}
+where $\|M\|^{2}_{F}$ is the Froebinius norm of $M$, i.e. $\trace{MM^{H}}$. The least square approach leads to:
+\begin{eqnarray*}
+\hat \phi &=& \arg\min_{\phi\in\Phi} J(\phi)
+\end{eqnarray*}
+which can be solved numerically.
+Then, carrying this estimate in \eqref{eq:parametricformofV} provides an estimate of $V_{u}$. Unfortunately searching for the minimum in a 6 dimensional set could be very cumbersome. However we can expect that the 3 measurement axes  are very close for the 2 sensors, particularly for the vertical.
+
+\subsubsection{Sub-optimal approach}
+The algorithm works in two steps
+\begin{enumerate}
+\item
+at first we only consider the vertical component of the SUT and we estimate the unitary vector carrying the so called vertical component of the SUT. This optimization consists of 2 angles. More specifically we let
+\begin{eqnarray*}
+S_{uu,3}&=&\sum_{f} H_{u,3}^{-1}(f)|X_{u,3}(f)|^{2}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+S_{ru,3}&=&\sum_{f} H_{r}^{-1}(f)X_{r}(f)X_{u,3}^{*}(f)
+\end{eqnarray*}
+
+
+\begin{eqnarray*}
+v(a,e) &=& \begin{bmatrix}
+\cos(a)\cos(e)& \sin(a)\cos(e)& \sin(e)
+\end{bmatrix}
 \end{eqnarray*}
 and
 \begin{eqnarray*}
-S_{ru}&=&\sum H_{r}^{-1}(f)X_{r}(f)X_{u}^{H}(f)
+J(a_{3},e_{3}) &=&  \left|S_{uu,3} - v(a_{3},e_{3})V^{-1}(\phi_{r})S_{ru,3} \right|^{2}
 \end{eqnarray*}
-and provides the solution:
+
+\item
+
+At the second step we globally estime the orientation of the two other components. More specifically we let
 \begin{eqnarray*}
-\hat \phi &=& \arg\min_{\phi} \|S_{uu} - V_{u}(\phi)V_{r}^{-1}S_{ru}\|^{2}
+S_{uu,12}&=&\sum_{f} H_{u,1:2}^{-1}(f) X_{u,1:2}(f)X^{H}_{u,1:2}(f)
 \end{eqnarray*}
-which can be solved numerically.
-Finally, carrying this estimate in \eqref{eq:parametricformofV} provides an estimate of $V_{u}$.
+
+\begin{eqnarray*}
+S_{ru,12}&=&\sum_{f} H_{r}^{-1}(f)X_{r}(f)X_{u,1:2}^{H}(f)
+\end{eqnarray*}
+
+
+\begin{eqnarray*}
+v(a_{1},e_{1},a_{2},e_{2}) &=& \begin{bmatrix}
+\cos(a_{1})\cos(e_{1})& \sin(a_{1})\cos(e_{1})& \sin(e_{1})
+\\
+\cos(a_{2})\cos(e_{2})& \sin(a_{2})\cos(e_{2})& \sin(e_{2})
+\end{bmatrix}
+\end{eqnarray*}
+and
+\begin{eqnarray*}
+J(a_{1},e_{1},a_{2},e_{2})  &=&  \left|S_{uu,12} - v(a_{1},e_{1},a_{2},e_{2}) V^{-1}(\phi_{r})S_{ru,12} \right|^{2}
+\end{eqnarray*}
+
+
+
+\end{enumerate}
+
+
+
 %=====================================
 %=====================================
 \section{General resolution}
