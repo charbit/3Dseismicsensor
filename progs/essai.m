@@ -4,24 +4,37 @@ clear
 % angle de rotation theta verifies
 %        Trace(R) = 1+2cos(theta)
 %
-a_deg =  [30;12;20];%rand(3,1)*180;%
-a_rd = a_deg*pi/180;
-cosa = cos(a_rd);
-sina = sin(a_rd);
-R1 = [1 0 0;0 cosa(1) -sina(1);0 sina(1) cosa(1)];
-R2 = [cosa(2) 0 sina(2);0 1 0; -sina(2) 0 cosa(2)];
-R3 = [cosa(3) -sina(3) 0;sina(3) cosa(3) 0;0 0 1];
-R  = R1*R2*R3;
-N  = 1000;
-eig(R)
-% Xu(f) = R * Hu(f) * s(f)
-% Xr(f) = Hr(f) * s(f)
-% Thanks to the responses Hu et Hr assumed te be known
-% we have
-%      s(f) =  (Hr^T(f)Hr(f))^-1Hr^T(f)Xr(f)
-%
-% ==>   Xu(f) = R * Hu(f) * (Hr^T(f)Hr(f))^-1Hr^T(f)Xr(f)
+au_deg =  [30;12;20];%rand(3,1)*180;%
+au_rd = au_deg*pi/180;
+cosau = cos(au_rd);
+sinau = sin(au_rd);
 
-sf = randn(N,3)+1j*randn(N,3);
-zf = sf * R;
+eu_deg = rand(3,1)*180;%
+eu_rd = eu_deg*pi/180;
+coseu = cos(eu_rd);
+sineu = sin(eu_rd);
+
+
+Vu = [cosau(1)*coseu(1) sinau(1)*coseu(1) sineu(1); ...
+    cosau(2)*coseu(2) sinau(2)*coseu(2) sineu(2); ...
+    cosau(3)*coseu(3) sinau(3)*coseu(3) sineu(3)];
+
+
+ar_deg =  [30;12;20];%rand(3,1)*180;%
+ar_rd = ar_deg*pi/180;
+cosar = cos(ar_rd);
+sinar = sin(ar_rd);
+
+er_deg = rand(3,1)*180;%
+er_rd = er_deg*pi/180;
+coser = cos(er_rd);
+siner = sin(er_rd);
+
+
+Vr = [cosar(1)*coser(1) sinar(1)*coser(1) siner(1); ...
+    cosar(2)*coser(2) sinar(2)*coser(2) siner(2); ...
+    cosar(3)*coser(3) sinar(3)*coser(3) siner(3)];
+
+A = randn(3);
+Suu = A*A';
 

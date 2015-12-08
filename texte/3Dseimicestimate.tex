@@ -183,30 +183,50 @@
 %=======================================================
 %=======================================================
 \section{Introduction}
-A 3D seismic device measures the three components of an acceleration vector in three specific directions attached to the device. These three directions form a trihedron almost orthogonal but not exactly. We denote $v_{u,1}$,  $v_{u,2}$,  $v_{u,3}$ the unitary vectors of these 3 directions of the seismic device under test (SUT), and  $v_{r,1}$,  $v_{r,2}$,  $v_{r,3}$ those of the reference system (SREF). It follows that the 3 signals on SUT write:
-\begin{eqnarray*}
+A 3D seismic device measures the three components of an acceleration vector in three specific directions attached to the device. These three directions form a trihedron almost orthogonal but not exactly. We denote $v_{u,1}$,  $v_{u,2}$,  $v_{u,3}$ the unitary vectors of these 3 directions of the seismic device under test (SUT), and  $v_{r,1}$,  $v_{r,2}$,  $v_{r,3}$ those of the reference system (SREF). All vectors are referred to any given orthonormal coordinate system. We index by $x$, $y$ and $z$ the coordinates w.r.t. this coordinate system. It follows that the 3 signals on SUT write:
+\begin{eqnarray}
+\label{eq:signalsT}
 \left\{
 \begin{array}{rcl}
-x_{u,1}(t)&=&h_{u,1}(t)\star (v_{u,1,1}g_{x}(t)+v_{u,1,2}g_{y}(t)+v_{u,1,3}g_{z}(t))
+x_{u,1}(t)&=&h_{u,1}(t)\star (v_{u,1,x}g_{x}(t)+v_{u,1,y}g_{y}(t)+v_{u,1,z}g_{z}(t))
 \\
-x_{u,2}(t)&=&h_{u,2}(t)\star (v_{u,2,1}g_{x}(t)+v_{u,2,2}g_{y}(t)+v_{u,2,3}g_{z}(t))
+x_{u,2}(t)&=&h_{u,2}(t)\star (v_{u,2,x}g_{x}(t)+v_{u,2,y}g_{y}(t)+v_{u,2,z}g_{z}(t))
 \\
-x_{u,3}(t)&=&h_{u,3}(t)\star (v_{u,3,1}g_{x}(t)+v_{u,3,2}g_{y}(t)+v_{u,3,3}g_{z}(t))
+x_{u,3}(t)&=&h_{u,3}(t)\star (v_{u,3,x}g_{x}(t)+v_{u,3,y}g_{y}(t)+v_{u,3,z3}g_{z}(t))
 \end{array}
 \right.
-\end{eqnarray*}
-and similar equations for the SREF. In frequency domain we get:
-\begin{eqnarray*}
+\end{eqnarray}
+where 
+\begin{itemize}
+\item
+$t$ is discrete from $0$ to $N-1$, at the sampling frequency $F_{s}$. Typically for an observation time of $1000$ seconds and a sampling frequency of $40$, $N=40,\!000$;
+\item
+$x_{u,1}(t)$, $x_{u,2}(t)$, $x_{u,3}(t)$  are the 3 output signals of the accelerometer;
+\item
+$g_{x}(t)$, $g_{y}(t)$, $g_{z}(t)$ are the 3 components  of the acceleration;
+\item
+$v_{u,k,x}$, $v_{u,k,y}$, $v_{u,k,z}$ are the 3 components of the direction $k$ with $k$ from 1 to 3;
+\item
+and $h_{u,1}(t)$, $h_{u,2}(t)$, $h_{u,3}(t)$  are the 3 impulse responses of the accelerometer.
+\end{itemize}
+In frequency domain \eqref{eq:signalsT} can be rewritten:
+\begin{eqnarray}
+\label{eq:signalsF}
 \left\{
 \begin{array}{rcl}
-X_{u,1}(f)&=&H_{u,1}(f) (v_{u,1,1}G_{x}(f)+v_{u,1,2}G_{y}(f)+v_{u,1,3}G_{z}(f))
+X_{u,1}(f)&=&H_{u,1}(f) (v_{u,1,x}G_{x}(f)+v_{u,1,y}G_{y}(f)+v_{u,1,z}G_{z}(f))
 \\
-X_{u,2}(f)&=&H_{u,2}(f) (v_{u,2,1}G_{x}(f)+v_{u,2,2}G_{y}(f)+v_{u,2,3}G_{z}(f))
+X_{u,2}(f)&=&H_{u,2}(f) (v_{u,2,x}G_{x}(f)+v_{u,2,y}G_{y}(f)+v_{u,2,z}G_{z}(f))
 \\
-X_{u,3}(f)&=&H_{u,3}(f) (v_{u,3,1}G_{x}(f)+v_{u,3,2}G_{y}(f)+v_{u,3,3}G_{z}(f))
+X_{u,3}(f)&=&H_{u,3}(f) (v_{u,3,x}G_{x}(f)+v_{u,3,y}G_{y}(f)+v_{u,3,z}G_{z}(f))
 \end{array}
 \right.
-\end{eqnarray*}
+\end{eqnarray}
+Remaining that for $k=0$ to $N-1$:
+\begin{eqnarray}
+X(f_{k})&=&\sum_{t=0}^{N-1}x(t)e^{-2j\pi f_{k}t}\quad \mathrm{with}\quad f_{k}=\frac{k}{N} 
+\end{eqnarray}
+
 More concisely we write
 \begin{eqnarray*}
 X_{u}(f)&=&H_{u}(f)V_{u}G(f)
@@ -235,12 +255,16 @@ V(\phi_{u})&=&
 \end{bmatrix}
 \end{eqnarray}
 where $\phi_{u}=(a_{u,1},a_{u,2},a_{u,3},e_{u,1},e_{u,2},e_{u,3})\in\Phi= (0,2\pi)^{\otimes 3}\times (0,\pi)^{\otimes 3}$
+It is worth to notice that the rows of $V$ are constrained to be with norm $1$.
 
-In our protocol, the  reference system (SREF) is a portable seismic device whose the trihedron  is perfectly known. 
+
+ \bigskip
+Similar equations can be written for the reference system (SREF). In our protocol, the  SREF is a portable seismic device whose the trihedron  is perfectly known. 
 Therefore we have in the absence of noise:
 \begin{eqnarray}
 \label{eq:signalmodel}
 \left\{
+\renewcommand\arraystretch{1.8}
 \begin{array}{rcl}
 X_{u}(f)&=&H_{u}(f)V(\phi_{u})G(f)
 \\
@@ -252,7 +276,19 @@ X_{r}(f)&=&H_{r}(f)V(\phi_{r})G(f)
 The objective is to estimate $\phi_{u}$, knowing $H_{r}(f)$,  $\phi_{r}$, $H_{u}(f)$ and observing $X_{u}(f)$ and $X_{r}(f)$.
 More specifically we can estimate the product $H_{u}(f)V_{u}$, but in the absence of a priori knowledge it is impossible to solve separately $H_{u}(f)$ and $V_{u}$.
 
-
+Just notice that 
+\begin{itemize}
+\item
+$X_{u}(f)$ and $X_{r}(f)$ are vectors of size 3 (observed),
+\item
+$G(f)$ is a vector of size 3, 
+\item
+$H_{u}(f)$ and $H_{r}(f)$ are square matrices of size 3 (known),
+\item
+$V(\phi_{r})$ is square matrix of size 3 (known),
+\item
+$V(\phi_{u})$ is square matrix of size 3 (to be estimated). 
+\end{itemize}
 %=====================================
 %=====================================
 \section{Resolution w.r.t. $V_{u}$}
@@ -266,25 +302,36 @@ It is worth to notice that integrating w.r.t. $f$ leads
 \sum H_{u}^{-1}(f)X_{u}(f)X_{u}^{H}(f)&=&V(\phi_{u})V^{-1}(\phi_{r})\sum H_{r}^{-1}(f)X_{r}(f)X_{u}^{H}(f)
 \end{eqnarray*}
 
-We let the 3 dimensional matrix:
+We let 
 \begin{eqnarray*}
-S_{uu}&=&\sum_{f} H_{u}^{-1}(f)X_{u}(f)X_{u}^{H}(f)
+S_{uu}&=&\sum_{k=0}^{N-1} H_{u}^{-1}(f_{k})X_{u}(f_{k})X_{u}^{H}(f_{k})
 \end{eqnarray*}
-the 3 dimensional matrix
+and 
 \begin{eqnarray*}
-S_{ru}&=&\sum_{f} H_{r}^{-1}(f)X_{r}(f)X_{u}^{H}(f)
+S_{ru}&=&\sum_{k=0}^{N-1} H_{r}^{-1}(f_{k})X_{r}(f_{k})X_{u}^{H}(f_{k})
 \end{eqnarray*}
-and the cost function
-\begin{eqnarray*}
-J(\phi) &=&  \|S_{uu} - V(\phi)V^{-1}(\phi_{r})S_{ru}\|_{F}^{2}
-\end{eqnarray*}
-where $\|M\|^{2}_{F}$ is the Froebinius norm of $M$, i.e. $\trace{MM^{H}}$. The least square approach leads to:
-\begin{eqnarray*}
-\hat \phi &=& \arg\min_{\phi\in\Phi} J(\phi)
-\end{eqnarray*}
-which can be solved numerically.
-Then, carrying this estimate in \eqref{eq:parametricformofV} provides an estimate of $V_{u}$. Unfortunately searching for the minimum in a 6 dimensional set could be very cumbersome. However we can expect that the 3 measurement axes  are very close for the 2 sensors, particularly for the vertical.
+$S_{uu}$ is a positive square matrix of dimension $3$ and $S_{ru}$ a square matrix of dimension $3$.
 
+Let us define the cost function\footnote{$\|M\|^{2}_{F}$ denotes the Froebinius norm of $M$, i.e. $\trace{MM^{H}}$. }:
+\begin{eqnarray*}
+J(\phi) &=&  \|B - V(\phi)\|_{F}^{2}
+\end{eqnarray*}
+where
+\begin{eqnarray*}
+B &=& S_{uu} S_{ur}^{-1}V(\phi_{r})
+\end{eqnarray*}
+assuming that $S_{ur}$ is inversible. The least square approach leads to the optimization problem:
+\begin{eqnarray}
+ \label{eq:hatphi}
+\hat \phi &=& \arg\min_{\phi\in\Phi} J(\phi)
+\end{eqnarray}
+which can be solved numerically. Unfortunately searching for the minimum in a 6 dimensional set $\Phi$ could be very cumbersome.
+
+It is worth to notice that the closed form expression matrix:
+\begin{eqnarray*}
+\tilde V &=&S_{uu}S_{ur}^{-1}V(\phi_{r})
+\end{eqnarray*}
+leads to a null cost value $J(\tilde V)=0$, but it is not necessary structured as equation \eqref{eq:parametricformofV}.  We could think that we can normalize each row of $\tilde V$ to satisfy the constraint, but that is not a good idea, indeed the result could be far from the optimal value under constraint. 
 \subsubsection{Sub-optimal approach}
 The algorithm works in two steps
 \begin{enumerate}
@@ -292,10 +339,12 @@ The algorithm works in two steps
 at first we only consider the vertical component of the SUT and we estimate the unitary vector carrying the so called vertical component of the SUT. This optimization consists of 2 angles. More specifically we let
 \begin{eqnarray*}
 S_{uu,3}&=&\sum_{f} H_{u,3}^{-1}(f)|X_{u,3}(f)|^{2}
+\quad \mathrm{(scalar)}\quad
 \end{eqnarray*}
 
 \begin{eqnarray*}
 S_{ru,3}&=&\sum_{f} H_{r}^{-1}(f)X_{r}(f)X_{u,3}^{*}(f)
+\quad \mathrm{(3D\, vector)}\quad
 \end{eqnarray*}
 
 
@@ -332,28 +381,23 @@ and
 \begin{eqnarray*}
 J(a_{1},e_{1},a_{2},e_{2})  &=&  \left|S_{uu,12} - v(a_{1},e_{1},a_{2},e_{2}) V^{-1}(\phi_{r})S_{ru,12} \right|^{2}
 \end{eqnarray*}
-
-
-
 \end{enumerate}
 
-
-
 %=====================================
 %=====================================
-\section{General resolution}
+\section{Resolution with unknown sensor response}
 %=====================================
-In this section we assume that the response $H_{u}(f)$ of the SUT depends on a $P$-dimensional parameter $a$.  Then:
+In this section we assume that the frequency response $H_{u}(f)$ of the SUT is unknown but depends on a $P$-dimensional parameter denoted $a$. For example $a$ could be the locations of the poles and zeroes of the response.  Then:
 
 \begin{eqnarray*}
-[\hat \phi, \hat a] &=& \arg\min_{\phi, a} \|S_{uu}(a) - V_{u}(\phi)V_{r}^{-1}S_{ru}\|^{2}
+[\hat \phi, \hat a] &=& \arg\min_{\phi, a} \|S_{uu}(a)S_{ru}^{-1} V_{r}- V_{u}(\phi)\|^{2}
 \end{eqnarray*}
 where 
 \begin{eqnarray*}
 S_{uu}(a) &=&
 \sum H_{u}^{-1}(f;a)X_{u}(f)X_{u}^{H}(f)
 \end{eqnarray*}
-which can be solved numerically with reasonable computational effort (maybe!)
+which can be solved numerically with reasonable computational effort (maybe!), with a  main issue on the locations of the poles that must be inside the unit circle.
 
 \end{document}
 
