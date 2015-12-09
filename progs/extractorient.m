@@ -15,8 +15,8 @@ nbvale    = length(liste_deg);
 
 XUTf  = fft(filteredsignalsUT3,[],2);
 XREFf = fft(filteredsignalsREF3,[],2);
-Suu   = (XUTf ./ HUT3)   * XUTf';
-Sur   = (XREFf ./ HREF3) * XUTf';
+Sur   = (XUTf ./ HUT3)   * XREFf';
+Srr   = (XREFf ./ HREF3) * XREFf';
 
 
 J_ii  = zeros(nbvala,nbvale);
@@ -24,13 +24,13 @@ hatau_deg = zeros(3,1);
 hateu_deg = zeros(3,1);
 
 for ii=1:3
-    Suu1D      = Suu(ii,:);
+    Suu1D      = Sur(ii,:);
     for ia_deg = 1:nbvala
         a_deg  = lista_deg(ia_deg);
         for ie_deg = 1:nbvale
             e_deg  = liste_deg(ie_deg);
             V      = matrixtrihadron(a_deg, e_deg);
-            J_ii(ia_deg,ie_deg) = norm(V*invVr*Sur-Suu1D);
+            J_ii(ia_deg,ie_deg) = norm(V*invVr*Srr-Suu1D);
         end
     end
     [ic,ir] = find(J_ii==min(min(J_ii)));

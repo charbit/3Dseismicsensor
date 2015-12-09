@@ -1,6 +1,7 @@
 \documentclass[a4paper, 12pt]{report}
 %================================================================
 \usepackage{color,amsmath,amsfonts,amssymb,epsfig,hyperref}
+\usepackage{verbatim}
 \usepackage{graphicx}
 \usepackage{dsfont}
 \usepackage[latin1]{inputenc}
@@ -209,7 +210,8 @@ $v_{u,k,x}$, $v_{u,k,y}$, $v_{u,k,z}$ are the 3 components of the direction $k$ 
 \item
 and $h_{u,1}(t)$, $h_{u,2}(t)$, $h_{u,3}(t)$  are the 3 impulse responses of the accelerometer.
 \end{itemize}
-In frequency domain \eqref{eq:signalsT} can be rewritten:
+
+In frequency domain equations \eqref{eq:signalsT} can be rewritten:
 \begin{eqnarray}
 \label{eq:signalsF}
 \left\{
@@ -222,56 +224,69 @@ X_{u,3}(f)&=&H_{u,3}(f) (v_{u,3,x}G_{x}(f)+v_{u,3,y}G_{y}(f)+v_{u,3,z}G_{z}(f))
 \end{array}
 \right.
 \end{eqnarray}
-Remaining that for $k=0$ to $N-1$:
+Remaining that for $m=0$ to $N-1$:
 \begin{eqnarray}
-X(f_{k})&=&\sum_{t=0}^{N-1}x(t)e^{-2j\pi f_{k}t}\quad \mathrm{with}\quad f_{k}=\frac{k}{N} 
+X(f_{m})&=&\sum_{t=0}^{N-1}x(t)e^{-2j\pi f_{m}t}\quad \mathrm{with}\quad f_{m}=\frac{m}{N} 
 \end{eqnarray}
+It is worth to notice that there is no coupling between the 3 filtering processing. That indices that the orientation of any of the 3 axes of the sensor has no effect on the other. It follows that we can estimate the orientations component by component.
 
-More concisely we write
+More concisely for one component we can write
 \begin{eqnarray*}
-X_{u}(f)&=&H_{u}(f)V_{u}G(f)
+X_{u,k}(f)&=&H_{u,k}(f)v_{u,k}G(f)
 \end{eqnarray*}
-where 
-\begin{eqnarray*}
-H_{u}(f)&=&
-\begin{bmatrix}
-H_{u,1}(f)&0&0
-\\
-0&H_{u,2}(f)&0
-\\
-0&0&H_{u,3}(f)
-\end{bmatrix}
-\end{eqnarray*}
-and where $V_{u}$ is the square matrix whose entries are $v_{u,k}$. Because the columns of $V_{u}$ are normalized, $V_{u}$ depends on 6 free parameters. A possible parametrization in an arbitrary orthonormal coordinate system is:
+and where $V_{u,k}$ is a normalized vector whose entries are $v_{u,k}$.  A possible parametrization in an arbitrary orthonormal coordinate system is:
 \begin{eqnarray}
 \label{eq:parametricformofV}
-V(\phi_{u})&=&
+v(\phi_{u,k})&=&
 \begin{bmatrix}
-\cos(a_{u,1})\cos(e_{u,1})&\sin(a_{u,1})\cos(e_{u,1})&\sin(e_{u,1})
-\\
-\cos(a_{u,2})\cos(e_{u,2})&\sin(a_{u,2})\cos(e_{u,2})&\sin(e_{u,2})
-\\
-\cos(a_{u,3})\cos(e_{u,3})&\sin(a_{u,3})\cos(e_{u,3})&\sin(e_{u,3})
+\cos(a_{u,k})\cos(e_{u,k})&\sin(a_{u,k})\cos(e_{u,k})&\sin(e_{u,k})
 \end{bmatrix}
 \end{eqnarray}
-where $\phi_{u}=(a_{u,1},a_{u,2},a_{u,3},e_{u,1},e_{u,2},e_{u,3})\in\Phi= (0,2\pi)^{\otimes 3}\times (0,\pi)^{\otimes 3}$
-It is worth to notice that the rows of $V$ are constrained to be with norm $1$.
-
+where $\phi_{u,k}=(a_{u,k},e_{u,k})\in\Phi= (0,2\pi)\times (-\pi/2,\pi/2)$
 
  \bigskip
-Similar equations can be written for the reference system (SREF). In our protocol, the  SREF is a portable seismic device whose the trihedron  is perfectly known. 
-Therefore we have in the absence of noise:
+Similar equations can be written for the reference system (SREF). 
+\begin{eqnarray}
+\label{eq:signalsF}
+\left\{
+\begin{array}{rcl}
+X_{r,1}(f)&=&H_{u,1}(f) (v_{r,1,x}G_{x}(f)+v_{r,1,y}G_{y}(f)+v_{r,1,z}G_{z}(f))
+\\
+X_{r,2}(f)&=&H_{r,2}(f) (v_{r,2,x}G_{x}(f)+v_{r,2,y}G_{y}(f)+v_{r,2,z}G_{z}(f))
+\\
+X_{r,3}(f)&=&H_{r,3}(f) (v_{r,3,x}G_{x}(f)+v_{r,3,y}G_{y}(f)+v_{r,3,z}G_{z}(f))
+\end{array}
+\right.
+\end{eqnarray}
+
+
+
+
+In our protocol, the  SREF is a portable seismic device whose the trihedron  is perfectly known. 
+Therefore we have in the absence of noise, for $k=1$ to $k=3$:
 \begin{eqnarray}
 \label{eq:signalmodel}
 \left\{
 \renewcommand\arraystretch{1.8}
 \begin{array}{rcl}
-X_{u}(f)&=&H_{u}(f)V(\phi_{u})G(f)
+X_{u,k}(f)&=&H_{u,k}(f)v(\phi_{u,k})G(f)
 \\
 X_{r}(f)&=&H_{r}(f)V(\phi_{r})G(f)
 \end{array}
 \right.
 \end{eqnarray}
+where
+\begin{eqnarray*}
+H_{r}(f)&=&\begin{bmatrix}
+H_{r,1}(f)&0&0
+\\
+0&H_{r,2}(f)&0
+\\
+0&0&H_{r,3}(f)
+\end{bmatrix}
+\end{eqnarray*}
+
+
 
 The objective is to estimate $\phi_{u}$, knowing $H_{r}(f)$,  $\phi_{r}$, $H_{u}(f)$ and observing $X_{u}(f)$ and $X_{r}(f)$.
 More specifically we can estimate the product $H_{u}(f)V_{u}$, but in the absence of a priori knowledge it is impossible to solve separately $H_{u}(f)$ and $V_{u}$.
@@ -281,108 +296,138 @@ Just notice that
 \item
 $X_{u}(f)$ and $X_{r}(f)$ are vectors of size 3 (observed),
 \item
-$G(f)$ is a vector of size 3, 
+$G(f)$ is a vector of size 3 (non observed),
 \item
 $H_{u}(f)$ and $H_{r}(f)$ are square matrices of size 3 (known),
 \item
 $V(\phi_{r})$ is square matrix of size 3 (known),
 \item
-$V(\phi_{u})$ is square matrix of size 3 (to be estimated). 
+$\phi_{u,k}=(a_{u,k},e_{u,k})$ is a 3 by 2 values (to be estimated). 
 \end{itemize}
 %=====================================
 %=====================================
 \section{Resolution w.r.t. $V_{u}$}
 %=====================================
-In this section we assume that we know the response $H_{u}(f)$ of the SUT. Then solving the second equation of \eqref{eq:signalmodel} w.r.t. $G(f)$, we get:
+In this section we assume that we perfectly know the response $H_{u,k}(f)$ of the 3 axes of the SUT. Then solving the second equation of \eqref{eq:signalmodel} w.r.t. $G(f)$, we get:
+\begin{eqnarray}
+\label{eq:XuasXr}
+H_{u,k}^{-1}(f)X_{u,k}(f)&=&v(\phi_{u,k})V ^{-1}(\phi_{r})H_{r}^{-1}(f)X_{r}(f)
+\end{eqnarray}
+Multiplying on the RHS by $X_{r}^{H}(f)$ leads to
 \begin{eqnarray*}
-X_{u}(f)&=&H_{u}(f)V(\phi_{u})V ^{-1}(\phi_{r})H_{r}^{-1}(f)X_{r}(f)
+H_{u,k}^{-1}(f)X_{u,k}(f)X_{r}^{H}(f)&=&V(\phi_{u})V ^{-1}(\phi_{r})H_{r}^{-1}(f)X_{r}(f)X_{r}^{H}(f)
 \end{eqnarray*}
-It is worth to notice that integrating w.r.t. $f$ leads
+Integrating w.r.t. $f$ leads to the expression
+\begin{eqnarray}
+\label{eq:integrateonf}
+\sum_{f} H_{u,k}^{-1}(f)X_{u,k}(f)X_{r}^{H}(f)&=&
+V(\phi_{u})V^{-1}(\phi_{r})
+\sum_{f} H_{r}^{-1}(f)X_{r}(f)X_{r}^{H}(f)
+\end{eqnarray}
+Letting
 \begin{eqnarray*}
-\sum H_{u}^{-1}(f)X_{u}(f)X_{u}^{H}(f)&=&V(\phi_{u})V^{-1}(\phi_{r})\sum H_{r}^{-1}(f)X_{r}(f)X_{u}^{H}(f)
-\end{eqnarray*}
-
-We let 
-\begin{eqnarray*}
-S_{uu}&=&\sum_{k=0}^{N-1} H_{u}^{-1}(f_{k})X_{u}(f_{k})X_{u}^{H}(f_{k})
+S_{ur,k}&=&\sum_{m=0}^{N-1} H_{u,k}^{-1}(f_{m})X_{u,k}(f_{m})X_{r}^{H}(f)
 \end{eqnarray*}
 and 
 \begin{eqnarray*}
-S_{ru}&=&\sum_{k=0}^{N-1} H_{r}^{-1}(f_{k})X_{r}(f_{k})X_{u}^{H}(f_{k})
+S_{rr}&=&\sum_{m=0}^{N-1} H_{r}^{-1}(f_{m})X_{r}(f_{m})X_{r}^{H}(f)
 \end{eqnarray*}
-$S_{uu}$ is a positive square matrix of dimension $3$ and $S_{ru}$ a square matrix of dimension $3$.
-
-Let us define the cost function\footnote{$\|M\|^{2}_{F}$ denotes the Froebinius norm of $M$, i.e. $\trace{MM^{H}}$. }:
-\begin{eqnarray*}
-J(\phi) &=&  \|B - V(\phi)\|_{F}^{2}
-\end{eqnarray*}
-where
-\begin{eqnarray*}
-B &=& S_{uu} S_{ur}^{-1}V(\phi_{r})
-\end{eqnarray*}
-assuming that $S_{ur}$ is inversible. The least square approach leads to the optimization problem:
+where $S_{ur,k}$ is a 3D vector and $S_{rr}$ a $3$D positive square matrix (then inversible if of full rank), 
+we derive:
+\begin{eqnarray}
+\label{eq:linearmodel}
+S_{ur,k}&=&v(\phi_{u,k})V ^{-1}(\phi_{r})S_{rr}
+\end{eqnarray}
+Let us define the cost function:
+\begin{eqnarray}
+\label{eq:pbtosolve}
+J_{k}(\phi) &=&  \|S_{ur,k} - v(\phi)V ^{-1}(\phi_{r})S_{rr}\|^{2}
+\end{eqnarray}
+The least square approach leads to the optimization problem:
 \begin{eqnarray}
  \label{eq:hatphi}
-\hat \phi &=& \arg\min_{\phi\in\Phi} J(\phi)
+\hat \phi_{k} &=& \arg\min_{\phi\in\Phi} J_{k}(\phi)
 \end{eqnarray}
-which can be solved numerically. Unfortunately searching for the minimum in a 6 dimensional set $\Phi$ could be very cumbersome.
-
-It is worth to notice that the closed form expression matrix:
+which can be solved numerically. It is worth to notice that, assuming that $S_{rr}^{-1}$ is inversible (of full rank 3), the closed form expression matrix:
 \begin{eqnarray*}
-\tilde V &=&S_{uu}S_{ur}^{-1}V(\phi_{r})
+\tilde v &=&S_{ur,k}S_{rr}^{-1}V(\phi_{r})
 \end{eqnarray*}
 leads to a null cost value $J(\tilde V)=0$, but it is nor necessary structured as equation \eqref{eq:parametricformofV} neither real valued.  We could think that we can normalize each row of $\tilde V$ to satisfy the constraint, but that is not a good idea, indeed the result could be far from the optimal value under constraint. 
-\subsubsection{Sub-optimal approach}
-The algorithm works in two steps
-\begin{enumerate}
-\item
-at first we only consider the vertical component of the SUT and we estimate the unitary vector carrying the so called vertical component of the SUT. This optimization consists of 2 angles. More specifically we let
+
+The equation \eqref{eq:pbtosolve} writes:
+ \begin{eqnarray*}
+J_{k}(a,e)&=&\| S_{ur,k} - \begin{bmatrix}
+\cos(a)\cos(e)&\sin(a)\cos(e)&\sin(e)
+\end{bmatrix}V^{-1}(\phi_{r})S_{rr}\|^{2}
+ \end{eqnarray*}
+ which can be solved by a fine grid on the two variables $(a,e)$ for $k=1$, $2$ and $3$:
+ \begin{eqnarray*}
+ \begin{bmatrix}
+ \hat a_{u,k}& \hat e_{u,k}
+ \end{bmatrix}
+&=&\arg\min_{(a,e)\in(0,2\pi)\times(-\pi/2,\pi/2)}J_{k}(a,e)
+ \end{eqnarray*}
+ A Matlab function is given in annex.
+ 
+ 
+ \subsubsection{Analytical expression}
+ 
+We have to solve:
 \begin{eqnarray*}
-S_{uu,3}&=&\sum_{f} H_{u,3}^{-1}(f)|X_{u,3}(f)|^{2}
-\quad \mathrm{(scalar)}\quad
+\min_{v} \| S - vA\|^{2}, \quad \mathrm{under\,the\,constraint}\quad v^{H}v=1
+ \end{eqnarray*}
+Lagrangian leads to:
+\begin{eqnarray*}
+A^{H}(S-vA)&=&\lambda v
 \end{eqnarray*}
-
+then
 \begin{eqnarray*}
-S_{ru,3}&=&\sum_{f} H_{r}^{-1}(f)X_{r}(f)X_{u,3}^{*}(f)
-\quad \mathrm{(3D\, vector)}\quad
+v&=&
+(A^{H}A+\lambda I)^{-1}A^{H}S
 \end{eqnarray*}
-
-
+with $\lambda$ s.t.
 \begin{eqnarray*}
-v(a,e) &=& \begin{bmatrix}
-\cos(a)\cos(e)& \sin(a)\cos(e)& \sin(e)
-\end{bmatrix}
+S^{H}A(A^{H}A+\lambda I)^{-2}A^{H}S&=&1
 \end{eqnarray*}
-and
+Letting $W=A^{H}S$
 \begin{eqnarray*}
-J(a_{3},e_{3}) &=&  \left|S_{uu,3} - v(a_{3},e_{3})V^{-1}(\phi_{r})S_{ru,3} \right|^{2}
+W^{H}(A^{H}A+\lambda I)^{-2}W&=&1
 \end{eqnarray*}
-
-\item
-
-At the second step we globally estime the orientation of the two other components. More specifically we let
+Using eigendecomposition of $A^{H}A$ we have:
+\begin{eqnarray}
+(A^{H}A+\lambda I)^{-2}&=&\sum_{n}(\mu_{n}+\lambda)^{-2} a_{n}a_{n}^{H}
+\end{eqnarray}
+and 
 \begin{eqnarray*}
-S_{uu,12}&=&\sum_{f} H_{u,1:2}^{-1}(f) X_{u,1:2}(f)X^{H}_{u,1:2}(f)
+\sum_{n}(\mu_{n}+\lambda)^{-2} \underbrace{W^{H}a_{n}a_{n}^{H}W}_{\gamma_{n}}&=&1
 \end{eqnarray*}
-
+therefore
 \begin{eqnarray*}
-S_{ru,12}&=&\sum_{f} H_{r}^{-1}(f)X_{r}(f)X_{u,1:2}^{H}(f)
+\frac{\gamma_{1}}{(\mu_{1}+\lambda)^{-2}}
++\frac{\gamma_{2}}{(\mu_{2}+\lambda)^{-2}}
++\frac{\gamma_{3}}{(\mu_{3}+\lambda)^{-2}}&=&1
 \end{eqnarray*}
-
-
+Finally we have the 6th degree equation:
 \begin{eqnarray*}
-v(a_{1},e_{1},a_{2},e_{2}) &=& \begin{bmatrix}
-\cos(a_{1})\cos(e_{1})& \sin(a_{1})\cos(e_{1})& \sin(e_{1})
+&&(\mu_{1}+\lambda)^{2}(\mu_{2}+\lambda)^{2}(\mu_{3}+\lambda)^{2}
 \\
-\cos(a_{2})\cos(e_{2})& \sin(a_{2})\cos(e_{2})& \sin(e_{2})
-\end{bmatrix}
+&&\hspace{2cm}
+-\gamma_{1}(\mu_{2}+\lambda)^{2}(\mu_{3}+\lambda)^{2}
+-\gamma_{2}(\mu_{1}+\lambda)^{2}(\mu_{3}+\lambda)^{2}
+-\gamma_{3}(\mu_{2}+\lambda)^{2}(\mu_{1}+\lambda)^{2}
+= 0
 \end{eqnarray*}
-and
 \begin{eqnarray*}
-J(a_{1},e_{1},a_{2},e_{2})  &=&  \left|S_{uu,12} - v(a_{1},e_{1},a_{2},e_{2}) V^{-1}(\phi_{r})S_{ru,12} \right|^{2}
+\lambda^{6}&:&1
+\\
+\lambda^{5}&:&0
 \end{eqnarray*}
-\end{enumerate}
-
+%=====================================
+ \subsubsection{Simulation}
+ We generate, from a white process, a 3D acceleration vector as a function of time. We compute the 3 components of the accelerometer for an arbitrary set of 3 frequency responses. The 
+ 
+ taking a randomly  chosen . The orientation of the of each axis is characterized by 2 angles.
+ 
 %=====================================
 %=====================================
 \section{Resolution with unknown sensor response}
@@ -397,7 +442,24 @@ where
 S_{uu}(a) &=&
 \sum H_{u}^{-1}(f;a)X_{u}(f)X_{u}^{H}(f)
 \end{eqnarray*}
-which can be solved numerically with reasonable computational effort (maybe!), with a  main issue on the locations of the poles that must be inside the unit circle.
+which can be solved numerically with reasonable computational effort, with a  main issue on the locations of the poles that must be inside the unit circle.
+
+
+%=====================================
+%=====================================
+\appendix
+\section{2 Functions}
+
+\subsection{Extract the 3 components in the same function}
+{\tiny \verbatiminput{../progs/extractorient.m}}
+
+\subsection{Extract one component}
+{\tiny \verbatiminput{../progs/extractoneorient.m}}
+
+
+\section{Program}
+
+{\tiny \verbatiminput{../progs/estimate3Dsystem.m}}
 
 \end{document}
 

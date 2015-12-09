@@ -47,8 +47,21 @@ xut         = real(ifft(Xuf,[],2));
 xref        = real(ifft(Xref,[],2));
 
 orientUT_deg = extractorient(xut,xref, ...
-    Huf, Hrf ,orientREF_deg, ...
-    lista_deg,liste_deg)
+    Huf, Hrf , orientREF_deg, ...
+    lista_deg,liste_deg);
+
+
+hatau_degk = zeros(3,1);
+hateu_degk = zeros(3,1);
+
+for kk=1:3
+ orientUTk_deg = extractoneorient(...
+    xut(kk,:), xref, Huf(kk,:), Hrf, orientREF_deg, ...
+    lista_deg,liste_deg);
+hatau_degk(kk) = orientUTk_deg.a;
+hateu_degk(kk) = orientUTk_deg.e;
+end
+
 hatau_deg = orientUT_deg.a;
 hateu_deg = orientUT_deg.e;
 [hatau_deg au_deg]
