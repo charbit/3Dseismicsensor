@@ -4,7 +4,7 @@ clear
 rng(10);
 %======= SREF
 ar_deg    = [30;120;10];
-er_deg    = [0.001; 0.002; 89];
+er_deg    = [0.001; 0.002; 89.9];
 Vr        = matrixtrihedron(ar_deg, er_deg);
 %======= SUT randomly selected around the SREF
 au_deg    = ar_deg+randn(3,1);
@@ -12,8 +12,12 @@ eu_deg    = er_deg+0.5*randn(3,1);
 Vu        = matrixtrihedron(au_deg, eu_deg);
 %==================================
 % model of signals
+
+
 % xu(t) = hu(t) * (Vu x g(t) + noise)
 % xr(t) = hr(t) * (Vr x g(t) + noise)
+
+
 %== generate N acceleration vectors
 % and projections on SUT and SREF
 N           = 1000;
@@ -69,7 +73,7 @@ for ir = 1:Lruns
     hatau_degk = zeros(3,1);
     hateu_degk = zeros(3,1);
     for kk=1:3
-        voptim = extract1directionV2(...
+        voptim = extract1direction(...
             xutnoise(kk,:), xrtnoise, Huf(kk,:), Hrf, Vr);
         hatau_degk(kk) = real(atan2(voptim(2),voptim(1)))*180/pi;
         hateu_degk(kk) = real(asin(voptim(3)))*180/pi;
@@ -86,28 +90,36 @@ end
 figure(1)
 for ii=1:3
     subplot(2,3,ii)
-        boxplot(erra(ii,:))
+    DD = sprintf('D%i',ii);
+    boxplot(erra(ii,:),'label',DD)
     set(gca,'fontname','times','fontsize',12)
     if ii==2
-        ht = title(sprintf('the 3 azimut component errors - degree'));
+        ht = title(sprintf('the 3 azimut component\nerrors - degree'));
         pt = get(ht,'position');
-        pt(2)=pt(2)*1.03;
+        pt(2)=pt(2)*1.023;
         set(ht,'position',pt);
     end
     
     subplot(2,3,ii+3)
-    boxplot(erre(ii,:));
+    boxplot(erre(ii,:),'label',DD);
     set(gca,'fontname','times','fontsize',12)
     if ii==2
-        ht = title('the 3 elevation component errors');
+        ht = title('the 3  component errors');
+        ht = title(sprintf('the 3 elevation component\nerrors - degree'));
         pt = get(ht,'position');
         pt(2)=pt(2)*1.03;
         set(ht,'position',pt);
+        textx = sprintf('%i samples, SNR = %i dB\nSimulation of %i runs',N,SNRdB,Lruns);
+        hx = xlabel(textx);        
+        pt = get(hx,'position');
+        pt(2)=pt(2)*1.4;
+        set(hx,'position',pt);
+
     end
 end
 
 HorizontalSize = 12;
-VerticalSize   = 14;
+VerticalSize   = 16;
 set(gcf,'units','centimeters');
 set(gcf,'paperunits','centimeters');
 set(gcf,'PaperType','a3');
