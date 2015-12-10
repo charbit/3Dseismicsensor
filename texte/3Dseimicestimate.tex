@@ -225,22 +225,22 @@ X_{u,3}(f)&=&H_{u,3}(f) (v_{u,3,x}G_{x}(f)+v_{u,3,y}G_{y}(f)+v_{u,3,z}G_{z}(f))
 \right.
 \end{eqnarray}
 Remaining that for $m=0$ to $N-1$:
-\begin{eqnarray}
+\begin{eqnarray*}
 X(f_{m})&=&\sum_{t=0}^{N-1}x(t)e^{-2j\pi f_{m}t}\quad \mathrm{with}\quad f_{m}=\frac{m}{N} 
-\end{eqnarray}
+\end{eqnarray*}
 It is worth to notice that there is no coupling between the 3 filtering processing. That indices that the orientation of any of the 3 axes of the sensor has no effect on the other. It follows that we can estimate the orientations component by component.
 
 More concisely for one component we can write
 \begin{eqnarray*}
-X_{u,k}(f)&=&H_{u,k}(f)v_{u,k}G(f)
+X_{u,k}(f)&=&H_{u,k}(f)v_{u,k}^{T}G(f)
 \end{eqnarray*}
-and where $V_{u,k}$ is a normalized vector whose entries are $v_{u,k}$.  A possible parametrization in an arbitrary orthonormal coordinate system is:
+and where $v_{u,k}$ is a normalized column vector whose entries are $v_{u,k}$, therefore $v_{u,k}^{T}v_{u,k}=1$.  A possible parametrization in an arbitrary orthonormal coordinate system is:
 \begin{eqnarray}
 \label{eq:parametricformofV}
 v(\phi_{u,k})&=&
 \begin{bmatrix}
 \cos(a_{u,k})\cos(e_{u,k})&\sin(a_{u,k})\cos(e_{u,k})&\sin(e_{u,k})
-\end{bmatrix}
+\end{bmatrix}^{T}
 \end{eqnarray}
 where $\phi_{u,k}=(a_{u,k},e_{u,k})\in\Phi= (0,2\pi)\times (-\pi/2,\pi/2)$
 
@@ -269,9 +269,9 @@ Therefore we have in the absence of noise, for $k=1$ to $k=3$:
 \left\{
 \renewcommand\arraystretch{1.8}
 \begin{array}{rcl}
-X_{u,k}(f)&=&H_{u,k}(f)v(\phi_{u,k})G(f)
+X_{u,k}(f)&=&H_{u,k}(f)v_{u,k}^{T}G(f)
 \\
-X_{r}(f)&=&H_{r}(f)V(\phi_{r})G(f)
+X_{r}(f)&=&H_{r}(f)V_{r}G(f)
 \end{array}
 \right.
 \end{eqnarray}
@@ -285,43 +285,36 @@ H_{r,1}(f)&0&0
 0&0&H_{r,3}(f)
 \end{bmatrix}
 \end{eqnarray*}
+and where $V_{r}$ is a square matrix of size 3, whose rows are 3 unitary vectors of length $3$, whose parametrization form could be $v^{T}(\phi_{r,k})$.
 
 
-
-The objective is to estimate $\phi_{u}$, knowing $H_{r}(f)$,  $\phi_{r}$, $H_{u}(f)$ and observing $X_{u}(f)$ and $X_{r}(f)$.
-More specifically we can estimate the product $H_{u}(f)V_{u}$, but in the absence of a priori knowledge it is impossible to solve separately $H_{u}(f)$ and $V_{u}$.
-
-Just notice that 
+The objective is to estimate $v_{u,k}$, knowing:
 \begin{itemize}
 \item
-$X_{u}(f)$ and $X_{r}(f)$ are vectors of size 3 (observed),
+$X_{u}(f)$ and $X_{r}(f)$ which are vectors of size 3 (observed),
 \item
-$G(f)$ is a vector of size 3 (non observed),
+$H_{u,k}(f)$ and $H_{r}(f)$ which are square matrices of size 3 (known),
 \item
-$H_{u}(f)$ and $H_{r}(f)$ are square matrices of size 3 (known),
-\item
-$V(\phi_{r})$ is square matrix of size 3 (known),
-\item
-$\phi_{u,k}=(a_{u,k},e_{u,k})$ is a 3 by 2 values (to be estimated). 
+$V_{r}$ is square matrix of size 3 (known),
 \end{itemize}
 %=====================================
 %=====================================
-\section{Resolution w.r.t. $V_{u}$}
+\section{Resolution w.r.t. $v_{u}$}
 %=====================================
-In this section we assume that we perfectly know the response $H_{u,k}(f)$ of the 3 axes of the SUT. Then solving the second equation of \eqref{eq:signalmodel} w.r.t. $G(f)$, we get:
+In this section we assume that we perfectly know the response $H_{u,k}(f)$ along the $k$ axis of the SUT. Then solving the second equation of \eqref{eq:signalmodel} w.r.t. $G(f)$, we get:
 \begin{eqnarray}
 \label{eq:XuasXr}
-H_{u,k}^{-1}(f)X_{u,k}(f)&=&v(\phi_{u,k})V ^{-1}(\phi_{r})H_{r}^{-1}(f)X_{r}(f)
+H_{u,k}^{-1}(f)X_{u,k}(f)&=&v_{u}^{T}V ^{-1}H_{r}^{-1}(f)X_{r}(f)
 \end{eqnarray}
 Multiplying on the RHS by $X_{r}^{H}(f)$ leads to
 \begin{eqnarray*}
-H_{u,k}^{-1}(f)X_{u,k}(f)X_{r}^{H}(f)&=&V(\phi_{u})V ^{-1}(\phi_{r})H_{r}^{-1}(f)X_{r}(f)X_{r}^{H}(f)
+H_{u,k}^{-1}(f)X_{u,k}(f)X_{r}^{H}(f)&=&v_{u}^{T}V _{r}^{-1}H_{r}^{-1}(f)X_{r}(f)X_{r}^{H}(f)
 \end{eqnarray*}
 Integrating w.r.t. $f$ leads to the expression
 \begin{eqnarray}
 \label{eq:integrateonf}
 \sum_{f} H_{u,k}^{-1}(f)X_{u,k}(f)X_{r}^{H}(f)&=&
-V(\phi_{u})V^{-1}(\phi_{r})
+v_{u}^{T}V_{r}^{-1}
 \sum_{f} H_{r}^{-1}(f)X_{r}(f)X_{r}^{H}(f)
 \end{eqnarray}
 Letting
@@ -336,78 +329,60 @@ where $S_{ur,k}$ is a 3D vector and $S_{rr}$ a $3$D positive square matrix (then
 we derive:
 \begin{eqnarray}
 \label{eq:linearmodel}
-S_{ur,k}&=&v(\phi_{u,k})V ^{-1}(\phi_{r})S_{rr}
+S_{ur,k}&=&v_{u}^{T}V_{r}^{-1}S_{rr}
 \end{eqnarray}
 Let us define the cost function:
 \begin{eqnarray}
 \label{eq:pbtosolve}
-J_{k}(\phi) &=&  \|S_{ur,k} - v(\phi)V ^{-1}(\phi_{r})S_{rr}\|^{2}
+J_{k}(v) &=&  \|S_{ur,k} - v^{T}V_{r}^{-1}(\phi_{r})S_{rr}\|^{2}
 \end{eqnarray}
 The least square approach leads to the optimization problem:
 \begin{eqnarray}
  \label{eq:hatphi}
-\hat \phi_{k} &=& \arg\min_{\phi\in\Phi} J_{k}(\phi)
+v_{k} &=& \arg\min_{v} J_{k}(v)
 \end{eqnarray}
-which can be solved numerically. It is worth to notice that, assuming that $S_{rr}^{-1}$ is inversible (of full rank 3), the closed form expression matrix:
-\begin{eqnarray*}
-\tilde v &=&S_{ur,k}S_{rr}^{-1}V(\phi_{r})
-\end{eqnarray*}
-leads to a null cost value $J(\tilde V)=0$, but it is nor necessary structured as equation \eqref{eq:parametricformofV} neither real valued.  We could think that we can normalize each row of $\tilde V$ to satisfy the constraint, but that is not a good idea, indeed the result could be far from the optimal value under constraint. 
+under the constraint that $v^{T}v=1$.
 
-The equation \eqref{eq:pbtosolve} writes:
- \begin{eqnarray*}
-J_{k}(a,e)&=&\| S_{ur,k} - \begin{bmatrix}
-\cos(a)\cos(e)&\sin(a)\cos(e)&\sin(e)
-\end{bmatrix}V^{-1}(\phi_{r})S_{rr}\|^{2}
- \end{eqnarray*}
- which can be solved by a fine grid on the two variables $(a,e)$ for $k=1$, $2$ and $3$:
- \begin{eqnarray*}
- \begin{bmatrix}
- \hat a_{u,k}& \hat e_{u,k}
- \end{bmatrix}
-&=&\arg\min_{(a,e)\in(0,2\pi)\times(-\pi/2,\pi/2)}J_{k}(a,e)
- \end{eqnarray*}
- A Matlab function is given in annex.
  
  
- \subsubsection{Analytical expression}
+ \subsubsection{Analytical resolution}
  
-We have to solve:
+Letting $A=S_{rr}^{H}V^{-H}(\phi_{r})$ and $s=S_{ur,k}^{H}$, the problem writes:
 \begin{eqnarray*}
-\min_{v} \| S - vA\|^{2}, \quad \mathrm{under\,the\,constraint}\quad v^{H}v=1
+\min_{v} \| s - Av\|^{2}, \quad \mathrm{under\,the\,constraint}\quad v^{H}v=1
  \end{eqnarray*}
-Lagrangian leads to:
+Lagrangian approach leads to:
 \begin{eqnarray*}
-A^{H}(S-vA)&=&\lambda v
+A^{H}(s-Av)&=&\lambda v
 \end{eqnarray*}
 then
 \begin{eqnarray*}
 v&=&
-(A^{H}A+\lambda I)^{-1}A^{H}S
+(A^{H}A+\lambda I)^{-1}A^{H}s
 \end{eqnarray*}
 with $\lambda$ s.t.
 \begin{eqnarray*}
-S^{H}A(A^{H}A+\lambda I)^{-2}A^{H}S&=&1
+s^{H}A(A^{H}A+\lambda I)^{-2}A^{H}s&=&1
 \end{eqnarray*}
 Letting $W=A^{H}S$
 \begin{eqnarray*}
 W^{H}(A^{H}A+\lambda I)^{-2}W&=&1
 \end{eqnarray*}
 Using eigendecomposition of $A^{H}A$ we have:
-\begin{eqnarray}
+\begin{eqnarray*}
 (A^{H}A+\lambda I)^{-2}&=&\sum_{n}(\mu_{n}+\lambda)^{-2} a_{n}a_{n}^{H}
-\end{eqnarray}
+\end{eqnarray*}
 and 
 \begin{eqnarray*}
 \sum_{n}(\mu_{n}+\lambda)^{-2} \underbrace{W^{H}a_{n}a_{n}^{H}W}_{\gamma_{n}}&=&1
 \end{eqnarray*}
 therefore
 \begin{eqnarray*}
-\frac{\gamma_{1}}{(\mu_{1}+\lambda)^{-2}}
-+\frac{\gamma_{2}}{(\mu_{2}+\lambda)^{-2}}
-+\frac{\gamma_{3}}{(\mu_{3}+\lambda)^{-2}}&=&1
+\frac{\gamma_{1}}{(\mu_{1}+\lambda)^{2}}
++\frac{\gamma_{2}}{(\mu_{2}+\lambda)^{2}}
++\frac{\gamma_{3}}{(\mu_{3}+\lambda)^{2}}&=&1
 \end{eqnarray*}
-Finally we have the 6th degree equation:
+Finally we have the 6th degree equation in $\lambda$:
 \begin{eqnarray*}
 &&(\mu_{1}+\lambda)^{2}(\mu_{2}+\lambda)^{2}(\mu_{3}+\lambda)^{2}
 \\
@@ -417,49 +392,70 @@ Finally we have the 6th degree equation:
 -\gamma_{3}(\mu_{2}+\lambda)^{2}(\mu_{1}+\lambda)^{2}
 = 0
 \end{eqnarray*}
+That leads to the following coefficient list:
 \begin{eqnarray*}
-\lambda^{6}&:&1
+\lambda^{0}&:&
+\mu_{1}^2\mu_{2}^2\mu_{3}^2 - \gamma_{3}\mu_{1}^2\mu_{2}^2 - \gamma_{2}\mu_{1}^2\mu_{3}^2 - \gamma_{1}\mu_{2}^2\mu_{3}^2
 \\
-\lambda^{5}&:&0
+\lambda^{1}&:&
+2\mu_{1}^2\mu_{2}^2\mu_{3} + 2\mu_{1}^2\mu_{2}\mu_{3}^2 - 2\gamma_{3}\mu_{1}^2\mu_{2} \\
+&&- 2\gamma_{2}\mu_{1}^2\mu_{3} + 2\mu_{1}\mu_{2}^2\mu_{3}^2 - 2\gamma_{3}\mu_{1}\mu_{2}^2 - 2\gamma_{2}\mu_{1}\mu_{3}^2 - 2\gamma_{1}\mu_{2}^2\mu_{3} - 2\gamma_{1}\mu_{2}\mu_{3}^2
+\\
+\lambda^{2}&:&
+\mu_{1}^2\mu_{2}^2 - \gamma_{2}\mu_{1}^2 - \gamma_{1}\mu_{3}^2 - \gamma_{3}\mu_{1}^2 - \gamma_{2}\mu_{3}^2 - \gamma_{3}\mu_{2}^2 - \gamma_{1}\mu_{2}^2 + \mu_{1}^2\mu_{3}^2 \\
+&&+ \mu_{2}^2\mu_{3}^2 + 4\mu_{1}\mu_{2}\mu_{3}^2 + 4\mu_{1}\mu_{2}^2\mu_{3} + 4\mu_{1}^2\mu_{2}\mu_{3} - 4\gamma_{1}\mu_{2}\mu_{3} - 4\gamma_{2}\mu_{1}\mu_{3} - 4\gamma_{3}\mu_{1}\mu_{2}
+\\
+\lambda^{3}&:&
+2\mu_{1}\mu_{2}^2 - 2\gamma_{2}\mu_{1} - 2\gamma_{1}\mu_{3} - 2\gamma_{3}\mu_{1} - 2\gamma_{2}\mu_{3} - 2\gamma_{3}\mu_{2} - 2\gamma_{1}\mu_{2} + 2\mu_{1}^2\mu_{2} \\
+&&+ 2\mu_{1}\mu_{3}^2 + 2\mu_{1}^2\mu_{3} + 2\mu_{2}\mu_{3}^2 + 2\mu_{2}^2\mu_{3} + 8\mu_{1}\mu_{2}\mu_{3}
+\\
+\lambda^{4}&:&
+\mu_{1}^2 + 4\mu_{1}\mu_{2} + 4\mu_{1}\mu_{3} + \mu_{2}^2 + 4\mu_{2}\mu_{3} + \mu_{3}^2 - \gamma_{1} - \gamma_{2} - \gamma_{3}
+\\
+\lambda^{5}&:&2\mu_{1} + 2\mu_{2} + 2\mu_{3}
+\\
+\lambda^{6}&:&1
 \end{eqnarray*}
+We obtain 6 roots and you select that of them giving  the minimum value of the cost function.
 %=====================================
  \subsubsection{Simulation}
- We generate, from a white process, a 3D acceleration vector as a function of time. We compute the 3 components of the accelerometer for an arbitrary set of 3 frequency responses. The 
- 
- taking a randomly  chosen . The orientation of the of each axis is characterized by 2 angles.
- 
-%=====================================
-%=====================================
-\section{Resolution with unknown sensor response}
-%=====================================
-In this section we assume that the frequency response $H_{u}(f)$ of the SUT is unknown but depends on a $P$-dimensional parameter denoted $a$. For example $a$ could be the locations of the poles and zeroes of the response.  Then:
+ We generate, from a white process, a 3D acceleration vector as a function of time. We compute the 3 components of the accelerometer for the two given trihedron one for the SUT  the other for the SREF and for an arbitrary set of 3 frequency responses for the SUT and the same for the SREF. All these values are randomly drawn.The difference between the true direction angles and the expected values are reported figure \ref{fig:}.
 
-\begin{eqnarray*}
-[\hat \phi, \hat a] &=& \arg\min_{\phi, a} \|S_{uu}(a)S_{ru}^{-1} V_{r}- V_{u}(\phi)\|^{2}
-\end{eqnarray*}
-where 
-\begin{eqnarray*}
-S_{uu}(a) &=&
-\sum H_{u}^{-1}(f;a)X_{u}(f)X_{u}^{H}(f)
-\end{eqnarray*}
-which can be solved numerically with reasonable computational effort, with a  main issue on the locations of the poles that must be inside the unit circle.
 
+It is worth to notice that, if we assume that the frequency response $H_{u}(f)$ of the SUT is unknown but depends on a $P$-dimensional parameter, this can be estimated using the same cost function. As an example $a$ could be the locations of the poles and zeroes of the transfer function.
+%%=====================================
+%%=====================================
+%\section{Resolution with unknown sensor response}
+%%=====================================
+%In this section Then:
+%
+%\begin{eqnarray}
+%[\hat \phi, \hat a] &=& \arg\min_{\phi, a} \|S_{uu}(a)S_{ru}^{-1} V_{r}- V_{u}(\phi)\|^{2}
+%\end{eqnarray}
+%where 
+%\begin{eqnarray}
+%S_{uu}(a) &=&
+%\sum H_{u}^{-1}(f;a)X_{u}(f)X_{u}^{H}(f)
+%\end{eqnarray}
+%which can be solved numerically with reasonable computational effort, with a  main issue on the locations of the poles that must be inside the unit circle.
+%
 
 %=====================================
 %=====================================
 \appendix
-\section{2 Functions}
+\section{Function}
 
-\subsection{Extract the 3 components in the same function}
-{\tiny \verbatiminput{../progs/extractorient.m}}
-
-\subsection{Extract one component}
-{\tiny \verbatiminput{../progs/extractoneorient.m}}
+{\tiny \verbatiminput{../progs/extract1direction.m}}
 
 
 \section{Program}
 
 {\tiny \verbatiminput{../progs/estimate3Dsystem.m}}
+
+
+\subsubsection{Useful function}
+
+{\tiny \verbatiminput{../progs/matrixtrihedron.m}}
 
 \end{document}
 

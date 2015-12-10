@@ -13,7 +13,7 @@ invVr     = inv(Vr);
 nbvala    = length(lista_deg);
 nbvale    = length(liste_deg);
 
-XUTkf     = fft(filteredsignalsUTk);
+XUTkf     = fft(filteredsignalsUTk,[],2);
 XREFf     = fft(filteredsignalsREF3,[],2);
 Surk      = (XUTkf ./ HUTk)   * XREFf';
 Srr       = (XREFf ./ HREF3D) * XREFf';
