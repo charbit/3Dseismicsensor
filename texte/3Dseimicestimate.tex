@@ -182,7 +182,12 @@
 %=======================================================
 %=======================================================
 \section{Introduction}
-A 3D seismic device measures the three components of an acceleration vector in three specific directions attached to the device. These three directions form a trihedron almost orthogonal but not exactly. We denote $v_{u,1}$,  $v_{u,2}$,  $v_{u,3}$ the unitary vectors of these 3 directions of the seismic device under test (SUT), and  $v_{r,1}$,  $v_{r,2}$,  $v_{r,3}$ those of the reference system (SREF). All vectors are referred to any given orthonormal coordinate system. We index by $x$, $y$ and $z$ the coordinates w.r.t. this coordinate system. It follows that the 3 signals on SUT write:
+
+\figscale{seismicUandR.pdf}{The 3 steering vectors of the SUT and the SREF are unitary, but not exactly orthogonal. Its components are referred w.r.t. a common orthonormal coordinate system. Any unitary vector can be characterized, for example,  by 2 angles, one called azimuth $a$ and other elevation $e$. The azimut goes from $0$ to $360°$ and the elevation from $-90°$ to $90°$.}{fig:seismicUandR}{0.6}
+
+A 3D seismic device measures the three components of an acceleration vector in three specific directions attached to the device. These three directions form a trihedron almost orthogonal but not exactly. We denote $v_{u,1}$,  $v_{u,2}$,  $v_{u,3}$ the unitary vectors of these 3 directions of the seismic device under test (SUT), and  $v_{r,1}$,  $v_{r,2}$,  $v_{r,3}$ those of the reference system (SREF). All vectors are referred to any given orthonormal coordinate system. We index by $x$, $y$ and $z$ the coordinates w.r.t. this coordinate system (see figure \ref{fig:seismicUandR}).
+
+It follows that the 3 signals on SUT write:
 \begin{eqnarray}
 \label{eq:signalsT}
 \left\{
@@ -300,82 +305,110 @@ $V_{r}$ is square matrix of size 3 (known),
 \section{Resolution w.r.t. $v_{u}$}
 %=====================================
 In this section we assume that we perfectly know the response $H_{u,k}(f)$ along the $k$ axis of the SUT. Then solving the second equation of \eqref{eq:signalmodel} w.r.t. $G(f)$, we get:
-\begin{eqnarray}
-\label{eq:XuasXr}
+\begin{eqnarray*}
 H_{u,k}^{-1}(f)X_{u,k}(f)&=&v_{u}^{T}V ^{-1}H_{r}^{-1}(f)X_{r}(f)
-\end{eqnarray}
-Multiplying on the RHS by $X_{r}^{H}(f)$ leads to
-\begin{eqnarray*}
-H_{u,k}^{-1}(f)X_{u,k}(f)X_{r}^{H}(f)&=&v_{u}^{T}V _{r}^{-1}H_{r}^{-1}(f)X_{r}(f)X_{r}^{H}(f)
 \end{eqnarray*}
-Integrating w.r.t. $f$ leads to the expression
+or
+\begin{eqnarray*}
+H_{u,k}^{-*}(f)X^{*}_{u,k}(f)&=&X^{H}_{r}(f)H_{r}^{-H}(f)V^{-T}v_{u}
+\end{eqnarray*}
+It is worth to notice that the two members are scalar and the RHS is the product of a row vector $X_{r}^{H}(f)$, two matrices $H_{r}^{-H}$ and $V^{-T}$, and a column vector $v_{u}$. Therefore, for $f=m/N$ with $m$ going from $0$ to $N-1$, we obtain $N$ linear equations that writes:
 \begin{eqnarray}
-\label{eq:integrateonf}
-\sum_{f} H_{u,k}^{-1}(f)X_{u,k}(f)X_{r}^{H}(f)&=&
-v_{u}^{T}V_{r}^{-1}
-\sum_{f} H_{r}^{-1}(f)X_{r}(f)X_{r}^{H}(f)
+y_{u,k}&=&\nonumber
+\begin{bmatrix}
+X^{H}_{r}(0)H_{r}^{-H}(0)V^{-T}v_{u,k}
+\\
+\vdots
+\\ 
+X^{H}_{r}(N-1)H_{r}^{-H}(N-1)V^{-T}v_{u,k}
+\end{bmatrix}
+\\
+&=&
+\begin{bmatrix}
+X^{H}_{r}(0)H_{r}^{-H}(0)
+\\
+\vdots
+\\ \nonumber
+X^{H}_{r}(N-1)H_{r}^{-H}(N-1)
+\end{bmatrix}V^{-T}v_{u,k}
 \end{eqnarray}
-Letting
-\begin{eqnarray*}
-S_{ur,k}&=&\sum_{m=0}^{N-1} H_{u,k}^{-1}(f_{m})X_{u,k}(f_{m})X_{r}^{H}(f)
-\end{eqnarray*}
-and 
-\begin{eqnarray*}
-S_{rr}&=&\sum_{m=0}^{N-1} H_{r}^{-1}(f_{m})X_{r}(f_{m})X_{r}^{H}(f)
-\end{eqnarray*}
-where $S_{ur,k}$ is a 3D vector and $S_{rr}$ a $3$D positive square matrix (then inversible if of full rank), 
-we derive:
+More concisely we write:
 \begin{eqnarray}
 \label{eq:linearmodel}
-S_{ur,k}&=&v_{u}^{T}V_{r}^{-1}S_{rr}
+y_{u,k}&=& Z \, v_{u,k}
 \end{eqnarray}
-Let us define the cost function:
+where
+\begin{eqnarray*}
+Z&=&\begin{bmatrix}
+X^{H}_{r}(0)H_{r}^{-H}(0)
+\\
+\vdots
+\\ 
+X^{H}_{r}(N-1)H_{r}^{-H}(N-1)
+\end{bmatrix}V^{-T}
+\end{eqnarray*}
+We notice that $X^{H}_{r}(m)H_{r}^{-H}(m)$ is a row vector of length 3 and $V^{-T}$ a square matrix of size $3$. Therefore $Z$ is a matrix of dimension $N\times 3$.
+The equation \eqref{eq:linearmodel} defines a linear model w.r.t. $v_{u,k}$. A least square approach under constraint writes:
 \begin{eqnarray}
 \label{eq:pbtosolve}
-J_{k}(v) &=&  \|S_{ur,k} - v^{T}V_{r}^{-1}(\phi_{r})S_{rr}\|^{2}
+\min_{v_{u,k}} \|y_{u,k} - Zv_{u,k}\|^{2}
+\quad\mathrm{under\ the\ constraint}\quad
+v_{u,k}^{T}v_{u,k}=1
 \end{eqnarray}
-The least square approach leads to the optimization problem:
-\begin{eqnarray}
- \label{eq:hatphi}
-v_{k} &=& \arg\min_{v} J_{k}(v)
-\end{eqnarray}
-under the constraint that $v^{T}v=1$.
 
- 
 %================================================
 \subsubsection{Analytical resolution}
  %================================================
-
-Letting $A=S_{rr}^{H}V^{-H}(\phi_{r})$ and $s=S_{ur,k}^{H}$, the problem writes:
+ We have to solve:
 \begin{eqnarray*}
-\min_{v} \| s - Av\|^{2}, \quad \mathrm{under\,the\,constraint}\quad v^{H}v=1
+\min_{v} \| y_{u,k} - Zv\|^{2}, \quad \mathrm{under\,the\,constraint}\quad v^{H}v=1
  \end{eqnarray*}
 Lagrangian approach leads to:
 \begin{eqnarray*}
-A^{H}(s-Av)&=&\lambda v
+Z^{H}(y_{u,k} -Zv)&=&\lambda v
 \end{eqnarray*}
 then
 \begin{eqnarray*}
 v&=&
-(A^{H}A+\lambda I)^{-1}A^{H}s
+(Z^{H}Z+\lambda I)^{-1}Z^{H}y_{u,k} 
 \end{eqnarray*}
 with $\lambda$ s.t.
 \begin{eqnarray*}
-s^{H}A(A^{H}A+\lambda I)^{-2}A^{H}s&=&1
+y_{u,k} ^{H}Z(Z^{H}Z+\lambda I)^{-2}Z^{H}y_{u,k} &=&1
 \end{eqnarray*}
-Letting $W=A^{H}S$
+Letting $w=Z^{H}y_{u,k} $ we have
+\begin{eqnarray}
+\label{eq:eqlambda}
+w^{H}(Z^{H}Z+\lambda I)^{-2}w&=&1
+\end{eqnarray}
+It is worth to notice that
 \begin{eqnarray*}
-W^{H}(A^{H}A+\lambda I)^{-2}W&=&1
+Z^{H}Z&=&
+\sum_{m=0}^{N-1}
+\underbrace{H_{r}^{-1}(m)X_{r}(m)}_{y_{r}(m)}
+\underbrace{X_{r}^{H}(m)H_{r}^{-H}(m)}_{y_{r}^{H}(m)}
 \end{eqnarray*}
-Using eigendecomposition of $A^{H}A$ we have:
+where the vector $y_{r}(m)$, of size $3\times 1$, can be seen as the deconvolution of the SREF signal at the frequency $f_{m}$. Also
+we notice that:
 \begin{eqnarray*}
-(A^{H}A+\lambda I)^{-2}&=&\sum_{n}(\mu_{n}+\lambda)^{-2} a_{n}a_{n}^{H}
+w=\sum_{m=0}^{N-1}
+\underbrace{H_{r}^{-1}(m)X_{r}(m)}_{y_{r}(m)}y_{u,k}(m) 
+=
+\sum_{m=0}^{N-1}y_{r}(m)y_{u,k}(m)
 \end{eqnarray*}
-and 
+which is a column vector of length $3$. Therefore $Z$ and $w$ may be considered, up to the multiplicative factor $1/N$, respectively as spectral  matrix of the SREF channels and cross-spectrum between the $k$-th SUT channel and the SREF channels.
+
+ \bigskip
+ To solve the equation \eqref{eq:eqlambda} w.r.t. $\lambda$, we use 
+the eigendecomposition $Z^{H}Z$ (still exists for hermitian matrix), saying $Z^{H}Z=\sum_{i=1}^{3}\mu_{i}a_{i}a_{i}^{H}$. That leads to:
 \begin{eqnarray*}
-\sum_{n}(\mu_{n}+\lambda)^{-2} \underbrace{W^{H}a_{n}a_{n}^{H}W}_{\gamma_{n}}&=&1
+(Z^{H}Z+\lambda I)^{-2}&=&\sum_{i}(\mu_{i}+\lambda)^{-2} a_{i}a_{i}^{H}
 \end{eqnarray*}
-therefore
+Equation \eqref{eq:eqlambda} can be rewritten:  
+\begin{eqnarray*}
+\sum_{i}(\mu_{i}+\lambda)^{-2} \underbrace{W^{H}a_{i}a_{i}^{H}W}_{\gamma_{i}}&=&1
+\end{eqnarray*}
+Then
 \begin{eqnarray*}
 \frac{\gamma_{1}}{(\mu_{1}+\lambda)^{2}}
 +\frac{\gamma_{2}}{(\mu_{2}+\lambda)^{2}}
@@ -415,7 +448,7 @@ That leads to the following coefficient list:
 \\
 \lambda^{6}&:&1
 \end{eqnarray*}
-We obtain 6 roots and you select that of them giving  the minimum value of the cost function.
+We obtain 6 roots and you select this of them giving  the minimum value of the cost function.
 %=====================================
  \subsubsection{Simulation}
  
@@ -426,16 +459,17 @@ We compute the three components of the accelerometer for the two given trihedron
 \label{eq:signalsT}
 \left\{
 \begin{array}{rcl}
-x_{u,1}(t)&=&h_{u,1}(t)\star (v_{u,1,x}g_{x}(t)+v_{u,1,y}g_{y}(t)+v_{u,1,z}g_{z}(t)+b_{1}(t))
+x_{u,1}(t)&=&h_{u,1}(t)\star (v_{u,1,x}g_{x}(t)+v_{u,1,y}g_{y}(t)+v_{u,1,z}g_{z}(t)+b_{u,1}(t))
 \\
-x_{u,2}(t)&=&h_{u,2}(t)\star (v_{u,2,x}g_{x}(t)+v_{u,2,y}g_{y}(t)+v_{u,2,z}g_{z}(t)+b_{2}(t))
+x_{u,2}(t)&=&h_{u,2}(t)\star (v_{u,2,x}g_{x}(t)+v_{u,2,y}g_{y}(t)+v_{u,2,z}g_{z}(t)+b_{u,2}(t))
 \\
-x_{u,3}(t)&=&h_{u,3}(t)\star (v_{u,3,x}g_{x}(t)+v_{u,3,y}g_{y}(t)+v_{u,3,z3}g_{z}(t)+b_{3}(t))
+x_{u,3}(t)&=&h_{u,3}(t)\star (v_{u,3,x}g_{x}(t)+v_{u,3,y}g_{y}(t)+v_{u,3,z3}g_{z}(t)+b_{u,3}(t))
 \end{array}
 \right.
 \end{eqnarray*}
+We have similar equations on the SREF channels.
 
-\figscale{boxplotoaande.pdf}{}{fig:boxplotoaande}{1}
+\figscale{boxplotoaande.pdf}{Boxplot of the errors on the 3 azimuts and the 3 elevations}{fig:boxplotoaande}{1}
 
 It is worth to notice that, if we assume that the frequency response $H_{u}(f)$ of the SUT is unknown but depends on a $P$-dimensional parameter, this can be estimated using the same cost function. As an example $a$ could be the locations of the poles and zeroes of the transfer function.
 %%=====================================
