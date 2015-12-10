@@ -1,7 +1,7 @@
 clear
 % attention the signal vectors and its Fourier transforms
 % are ROW vetors.
-
+rng(10);
 %======= SREF
 ar_deg    = [30;120;10];
 er_deg    = [0.001; 0.002; 89];
@@ -42,7 +42,7 @@ for ik=1:3
     numUT      = poly(zerosSUT(:,ik));
     denUT      = poly(polesSUT(:,ik));
     numREF     = poly(zerosSREF(:,ik));
-    denREF     = poly(zerosSREF(:,ik));    
+    denREF     = poly(zerosSREF(:,ik));
     hut(ik,:)  = filter(numUT, denUT,eye(100,1));
     hrt(ik,:)  = filter(numREF, denREF,eye(100,1));
 end
@@ -69,7 +69,7 @@ for ir = 1:Lruns
     hatau_degk = zeros(3,1);
     hateu_degk = zeros(3,1);
     for kk=1:3
-        voptim = extract1direction(...
+        voptim = extract1directionV2(...
             xutnoise(kk,:), xrtnoise, Huf(kk,:), Hrf, Vr);
         hatau_degk(kk) = real(atan2(voptim(2),voptim(1)))*180/pi;
         hateu_degk(kk) = real(asin(voptim(3)))*180/pi;
@@ -78,11 +78,53 @@ for ir = 1:Lruns
     erre(:,ir)   = hateu_degk-eu_deg;
     trihed(:,ir) = voptim;
 end
+
+[mean(erra,2) std(erra,[],2)]
+[mean(erre,2) std(erre,[],2)]
+
 %%
 figure(1)
 for ii=1:3
     subplot(2,3,ii)
-    boxplot(erra(ii,:))
+        boxplot(erra(ii,:))
+    set(gca,'fontname','times','fontsize',12)
+    if ii==2
+        ht = title(sprintf('the 3 azimut component errors - degree'));
+        pt = get(ht,'position');
+        pt(2)=pt(2)*1.03;
+        set(ht,'position',pt);
+    end
+    
     subplot(2,3,ii+3)
-    boxplot(erre(ii,:))
+    boxplot(erre(ii,:));
+    set(gca,'fontname','times','fontsize',12)
+    if ii==2
+        ht = title('the 3 elevation component errors');
+        pt = get(ht,'position');
+        pt(2)=pt(2)*1.03;
+        set(ht,'position',pt);
+    end
 end
+
+HorizontalSize = 12;
+VerticalSize   = 14;
+set(gcf,'units','centimeters');
+set(gcf,'paperunits','centimeters');
+set(gcf,'PaperType','a3');
+set(gcf,'position',[0 5 HorizontalSize VerticalSize]);
+set(gcf,'paperposition',[0 0 HorizontalSize VerticalSize]);
+set(gcf,'color', [1,1,0.92]);
+set(gcf, 'InvertHardCopy', 'off');
+
+printdirectory  = ' ../texte/';
+fileprint = sprintf('%sboxplotoaande.eps',...
+    printdirectory);
+
+fileprintepscmd = sprintf('print -depsc -loose %s',fileprint);
+fileeps2pdfcmd  = sprintf('!epstopdf %s',fileprint);
+filermcmd       = sprintf('!rm %s',fileprint);
+
+
+%     eval(fileprintepscmd)
+%     eval(fileeps2pdfcmd)
+%     eval(filermcmd)

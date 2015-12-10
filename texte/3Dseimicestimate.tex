@@ -13,7 +13,7 @@
 % \doublespace
   \oddsidemargin -0.5cm
   \evensidemargin +1.5cm
-  \textwidth 17cm
+  \textwidth 15cm
  \topmargin -2cm
 %============================================
 % Figures
@@ -96,8 +96,6 @@
 \def\uX{\underline X}
 \def\uZ{\underline Z}
 \def\utheta{\underline \theta}
-
-
 
 \def\tn{\mathrm{TN}}
 \def\fn{\mathrm{FN}}
@@ -344,9 +342,10 @@ v_{k} &=& \arg\min_{v} J_{k}(v)
 under the constraint that $v^{T}v=1$.
 
  
- 
- \subsubsection{Analytical resolution}
- 
+%================================================
+\subsubsection{Analytical resolution}
+ %================================================
+
 Letting $A=S_{rr}^{H}V^{-H}(\phi_{r})$ and $s=S_{ur,k}^{H}$, the problem writes:
 \begin{eqnarray*}
 \min_{v} \| s - Av\|^{2}, \quad \mathrm{under\,the\,constraint}\quad v^{H}v=1
@@ -419,8 +418,24 @@ That leads to the following coefficient list:
 We obtain 6 roots and you select that of them giving  the minimum value of the cost function.
 %=====================================
  \subsubsection{Simulation}
- We generate, from a white process, a 3D acceleration vector as a function of time. We compute the 3 components of the accelerometer for the two given trihedron one for the SUT  the other for the SREF and for an arbitrary set of 3 frequency responses for the SUT and the same for the SREF. All these values are randomly drawn.The difference between the true direction angles and the expected values are reported figure \ref{fig:}.
+ 
+We generate, from a white process, a 3D acceleration vector as a function of time. 
 
+We compute the three components of the accelerometer for the two given trihedron, one for the SUT  the other for the SREF, and for a given set of three frequency responses for the SUT and the same for the SREF. All these responses are computed via poles and zeroes and are a littlebit randomly modified. The difference between the true direction angles and the expected values are reported figure \ref{fig:boxplotoaande}. By this way we simulate $N$ samples:
+\begin{eqnarray*}
+\label{eq:signalsT}
+\left\{
+\begin{array}{rcl}
+x_{u,1}(t)&=&h_{u,1}(t)\star (v_{u,1,x}g_{x}(t)+v_{u,1,y}g_{y}(t)+v_{u,1,z}g_{z}(t)+b_{1}(t))
+\\
+x_{u,2}(t)&=&h_{u,2}(t)\star (v_{u,2,x}g_{x}(t)+v_{u,2,y}g_{y}(t)+v_{u,2,z}g_{z}(t)+b_{2}(t))
+\\
+x_{u,3}(t)&=&h_{u,3}(t)\star (v_{u,3,x}g_{x}(t)+v_{u,3,y}g_{y}(t)+v_{u,3,z3}g_{z}(t)+b_{3}(t))
+\end{array}
+\right.
+\end{eqnarray*}
+
+\figscale{boxplotoaande.pdf}{}{fig:boxplotoaande}{1}
 
 It is worth to notice that, if we assume that the frequency response $H_{u}(f)$ of the SUT is unknown but depends on a $P$-dimensional parameter, this can be estimated using the same cost function. As an example $a$ could be the locations of the poles and zeroes of the transfer function.
 %%=====================================
