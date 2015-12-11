@@ -60,6 +60,12 @@ trihed = zeros(3,Lruns);
 % noise level
 SNRdB  = 20;
 sigman = 10^(-SNRdB/20)*Pow;
+ 
+load('year2015month10day22.mat')
+for ik=1:3
+    xutnoise(1,:)
+    
+end
 for ir = 1:Lruns
     xutnoise = zeros(3,N);
     xrtnoise = zeros(3,N);
