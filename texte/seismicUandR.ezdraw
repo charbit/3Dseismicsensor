@@ -55,6 +55,26 @@
 								<key>LineRGB</key>
 								<string>rgb 0 0 0 1</string>
 								<key>LineWidth</key>
+								<string>0.5</string>
+								<key>MiterLimit</key>
+								<string>10</string>
+								<key>StrokePosition</key>
+								<string>Front</string>
+								<key>WindingRule</key>
+								<string>Non-Zero</string>
+							</dict>
+							<dict>
+								<key>DrawsFill</key>
+								<string>NO</string>
+								<key>DrawsLine</key>
+								<string>YES</string>
+								<key>LineCapStyle</key>
+								<string>Square</string>
+								<key>LineJoinStyle</key>
+								<string>Miter</string>
+								<key>LineRGB</key>
+								<string>rgb 0 0 0 1</string>
+								<key>LineWidth</key>
 								<string>1</string>
 								<key>MiterLimit</key>
 								<string>10</string>
@@ -15110,6 +15130,1113 @@
 								ODcKJSVFT0Y=
 								</data>
 							</dict>
+							<dict>
+								<key>ArchiveData</key>
+								<data>
+								JVBERi0xLjMK
+								JcTl8uXrp/Og
+								0MTGCjQgMCBv
+								YmoKPDwgL0xl
+								bmd0aCA1IDAg
+								UiAvRmlsdGVy
+								IC9GbGF0ZURl
+								Y29kZSA+Pgpz
+								dHJlYW0KeAEt
+								jbEKgzAURXe/
+								4oztYJqXmIdZ
+								BecSeOAHiA4F
+								C7r5901F7h0O
+								hwt3p7DjayT9
+								eyxMfKsKlwy0
+								6jvnU0crQbPL
+								WZk3BqOyBr1W
+								N0YvTntFY3JR
+								+sY2XnYKgq08
+								3k/sw2j1sPwA
+								w00ZIAplbmRz
+								dHJlYW0KZW5k
+								b2JqCjUgMCBv
+								YmoKMTA2CmVu
+								ZG9iagoyIDAg
+								b2JqCjw8IC9U
+								eXBlIC9QYWdl
+								IC9QYXJlbnQg
+								MyAwIFIgL1Jl
+								c291cmNlcyA2
+								IDAgUiAvQ29u
+								dGVudHMgNCAw
+								IFIgL01lZGlh
+								Qm94IFswIDAg
+								MTUgMTVdCj4+
+								CmVuZG9iago2
+								IDAgb2JqCjw8
+								IC9Qcm9jU2V0
+								IFsgL1BERiAv
+								VGV4dCBdIC9G
+								b250IDw8IC9U
+								eTEgNyAwIFIg
+								Pj4gPj4KZW5k
+								b2JqCjMgMCBv
+								YmoKPDwgL1R5
+								cGUgL1BhZ2Vz
+								IC9NZWRpYUJv
+								eCBbMCAwIDE1
+								IDE1XSAvQ291
+								bnQgMSAvS2lk
+								cyBbIDIgMCBS
+								IF0gPj4KZW5k
+								b2JqCjggMCBv
+								YmoKPDwgL1R5
+								cGUgL0NhdGFs
+								b2cgL1BhZ2Vz
+								IDMgMCBSID4+
+								CmVuZG9iago3
+								IDAgb2JqCjw8
+								IC9UeXBlIC9G
+								b250IC9TdWJ0
+								eXBlIC9UeXBl
+								MSAvQmFzZUZv
+								bnQgL0JJU1ZV
+								UitDTU1JMTAg
+								L0ZvbnREZXNj
+								cmlwdG9yIDkg
+								MCBSCi9FbmNv
+								ZGluZyAvTWFj
+								Um9tYW5FbmNv
+								ZGluZyAvRmly
+								c3RDaGFyIDc5
+								IC9MYXN0Q2hh
+								ciA3OSAvV2lk
+								dGhzIFsgNzYy
+								IF0gPj4KZW5k
+								b2JqCjkgMCBv
+								YmoKPDwgL1R5
+								cGUgL0ZvbnRE
+								ZXNjcmlwdG9y
+								IC9Gb250TmFt
+								ZSAvQklTVlVS
+								K0NNTUkxMCAv
+								RmxhZ3MgMzIg
+								L0ZvbnRCQm94
+								IFstNjMgLTI4
+								MSAxMDc5IDc4
+								MV0KL0l0YWxp
+								Y0FuZ2xlIC0x
+								NCAvQXNjZW50
+								IDc1MCAvRGVz
+								Y2VudCAtMjUw
+								IC9DYXBIZWln
+								aHQgLTMyNDAz
+								IC9TdGVtViA3
+								MiAvWEhlaWdo
+								dAoyIC9TdGVt
+								SCAzMSAvTWF4
+								V2lkdGggMTE0
+								MiAvRm9udEZp
+								bGUgMTAgMCBS
+								ID4+CmVuZG9i
+								agoxMCAwIG9i
+								ago8PCAvTGVu
+								Z3RoIDExIDAg
+								UiAvTGVuZ3Ro
+								MSAxMiAwIFIg
+								L0xlbmd0aDIg
+								MTMgMCBSIC9M
+								ZW5ndGgzIDE0
+								IDAgUiAvRmls
+								dGVyCi9GbGF0
+								ZURlY29kZSA+
+								PgpzdHJlYW0K
+								eAHtd2dUk123
+								LdKEYAFEBGmh
+								Sieh996rdBQp
+								IQkQShKS0Iv0
+								jtJ7U0BQ6R1E
+								ilQBUYooHaRI
+								UUGqgMAJ6vu9
+								5/3uveO7v884
+								+ZE8e625115l
+								zj2ecLLeNhZQ
+								gqHs4OooJE4A
+								LAiSBqro6WmB
+								QUAQSEQQBBIG
+								cHKaIHAu8L/s
+								AE4zOAaLQCGl
+								/xtCBQOH4PA2
+								VQgOD9RDIYHa
+								7i5AsAgQLC4N
+								lpAGgYDCIJAU
+								PtQvIAojDVSF
+								eCBgQD1BoDYK
+								CccCOFVQaG8M
+								wsERhz/nr0cg
+								N5QHCJaSkuD/
+								tR2o5ArHIKAQ
+								JFAPgnOEu+JP
+								hEJcgMYoKAKO
+								8/5HCG5ZRxwO
+								LS0k5OnpKQhx
+								xQqiMA7yPPxA
+								TwTOEWgEx8Ix
+								HnAY8LxkoD7E
+								Ff6nZEEAJ9DE
+								EYH97TBG2eM8
+								IRg4EG9wQUDh
+								SCx+izsSBscA
+								8acDjbV0gQZo
+								OPI3WPc3gB/4
+								pzlAsCD4X+H+
+								7D4PhED+2gyB
+								QlGuaAjSG4F0
+								ANojXOBAA3Vd
+								QZwXjh8IQcLO
+								gRAXLAqfDsQD
+								gnCB2OEBv1KH
+								ANWVDIEQfJP+
+								1IeFYhBoHFYQ
+								i3A5r1HoPAy+
+								zWpImArK1RWO
+								xGEB51WqIjBw
+								KA6F8Rb6M1xn
+								JMoT6fvXyh6B
+								hNmfNwPmjhYy
+								RSLc3OFaqsDf
+								GLwJ8LfNAY4D
+								ioEkJUQkxYBw
+								NyDcC+oodH6A
+								iTcaDjx3gs/N
+								+Br8fdEoNNAe
+								XwbcH2EPx/8A
+								fLEQDzgQh3GH
+								+/v+d8c/VwAw
+								GAhDQHFAO7gD
+								Agn4OzreDLf/
+								vcbPH4PwAlqC
+								8AQFA/FUBf79
+								ZIWnIgyFdPH+
+								G/5rxEIqKha6
+								Srf5/jTgX7GU
+								lVFeQF8BEWGg
+								gLAYCAgGiUoC
+								JfAP/v+McxuC
+								+FMl6O/AWkh7
+								FH7H73zxjfor
+								Z4/fCgFy/9EQ
+								D/CfwfRReOrC
+								gdx/M/0eSAwE
+								xX+B/7/5Djzf
+								8n+j+XmU/8j0
+								f89I3d3F5Veb
+								uH/35//wQ1wR
+								Lt5/EHjquuPw
+								MtBD4cWA/Heo
+								OfxcxkBuPTgM
+								4e76714tHAQv
+								ByWkA57SAmBR
+								QZDo73YisOoI
+								LzjsNgIHdfxN
+								m99203PBuSCQ
+								8NsoLOL8isHv
+								wl8nv8b3Lx9e
+								tFBn/DWCxXPz
+								twuCxQsW92uQ
+								51A4XlT/HIEa
+								EoqCnatPWEwc
+								CMFgIN4A/PDx
+								KzGgLxgvUxjc
+								6xe7gUKCSBQO
+								HwOIr9kfaI/C
+								AM4HLSEFFDI4
+								NwH+H2GNcXgR
+								QDCwf51zngbU
+								HYPBp/WL3viU
+								/lr/ugDgcC84
+								FDAxjoLKhDpV
+								h7b8qFRi8BRY
+								HpIl2Uz/YSEs
+								MFRoTYbrVhux
+								WUg0zsme1Hmm
+								PtEFVrd2atNX
+								dvuRO/thx3ep
+								hqXWW3RfgEV9
+								1YHFLn78bP/C
+								WJLvASPb+NVG
+								gkfmqcrM0sWY
+								boLbTDGU7eQK
+								MIduY86rfreq
+								Oz8meXLRlKhL
+								aIe16Le2V5Zk
+								69IySpl9+WSE
+								a7LrM1kW26W7
+								lffJ9WHIYuy9
+								qDT9TDYd2dZD
+								QKJnBeV8b3/f
+								NFUXU0dMkLZH
+								8PIWRziOSk2m
+								j1FV9GKF2fTj
+								Kz/zij02Mql9
+								7TSuKW7Aup/P
+								8aT+qNbfdlza
+								3rBi5U5ul3C0
+								TbaPBX/xOWSi
+								Qk/TKKdj8gtW
+								omFTuREsRA29
+								8kkHWLPODITm
+								q9myT0zO2hFh
+								Ot6TY53D8z/d
+								ddK0LN/2hHLz
+								6yXKnZYuffGv
+								43wZ52EfTth8
+								qzKVakmNjzab
+								Z93fPuRxD4dL
+								zvQ+d9iYubCl
+								ZLpji4n8k2mp
+								0OZACyoRkcse
+								iPRy0ytCdZ97
+								Lxbd2ff1ET19
+								vNPaqsw16VYR
+								g4yjjvWZr5n2
+								yyx8dLQJFnpd
+								C82oilXx8XRd
+								2Per8Fqw0u11
+								RRX5l/m0uIp9
+								nf9A9SAWJQ1k
+								yX263hYdGkcn
+								2BzFVja12BW5
+								x1xKGA8jKNHP
+								f360G0T7pgfV
+								QiAC8CgJij3a
+								8DnZIMwE6gPQ
+								tT4kz25flzEb
+								aXMQ733cTUEo
+								P8F/9l2+Oc0g
+								UFvUVQk0eGIk
+								Uj/exEvT59vK
+								95i2eYlaimoh
+								DOG+/FYveclA
+								8aqjv8C1Ke4H
+								l4NpDPtC1hIf
+								xrYoze825cXw
+								jFYxjH291FIi
+								F0QmKPX0c/bG
+								rogDw82dbLkr
+								LJatNixndmco
+								m+tbyoxmhXNH
+								PcEDF+u3zdlY
+								vtITLtXnZL2a
+								h2yvoe6qYw0S
+								eEKTCzk3YcLb
+								TZ6x+i/KRjXl
+								91T997bIpnIS
+								uu+kXGn5WlsF
+								drpbHuJQcoW0
+								DWzX2pSt/Qzi
+								Z9vqGFdsd5+n
+								w/NOyCbUkgvk
+								lLxVbUEg4f3D
+								AXAt3ZHeuCHs
+								MRfJfX9q9KnA
+								yLr9uDUQcjxu
+								A+hmcBH1MVvb
+								WUUa7cy3MdnE
+								wRUrangJffxS
+								E1LMEYINUoM8
+								D3ozspTDjR/M
+								YUXePnzonM9v
+								HWuXmLnlM9BE
+								BqEYCBO1USZd
+								XL9GQj193DN0
+								BN7kG56kGr1w
+								9Yt5XbVwPxqV
+								rXqc/TyKqNVL
+								vt/+g2bNkSWL
+								lYnafodTplFf
+								dIAQ3zHF0hLt
+								OjAznXLGRXLJ
+								x2I6EV29m5eV
+								o8lqdjAdBKtn
+								rQ+UgYk+LjAp
+								ujohJs2/eORB
+								ww7Vecg7PS7D
+								5/P2+kWL2Apq
+								n8vOwBuFhqNz
+								nt3yELceO/Fl
+								cJzWUdOQDiVX
+								mAL83fuDBLnI
+								dfumetktJ52f
+								D0Y5nBtd9mc5
+								bXZdOawoM6QW
+								BbpC8pdvOEN0
+								B+7fnD5MN3l7
+								G+z7LujaTRpk
+								ftSD97nqk752
+								Ji8HW+xJwz99
+								zS/zjdId2eCK
+								bG8H9FvkSC32
+								P5k/OvhWNyev
+								EHRtcqnWJP9j
+								H+qbkWfm6II0
+								III5C960CRDa
+								Jo9qXmVi7KCj
+								9T7+2njFPzQ/
+								ArcyafE4pJlN
+								InDbDRc6b3/k
+								3069MpzMUxku
+								SWxsNGqR4n2D
+								WjYbWyvslGJg
+								3bIQ0kzJ2X7p
+								oWlOc9i8r/xY
+								nFB+acVTFVfU
+								3DJoiLPU/xF6
+								6gbss68jrah8
+								NHX0RWtP1Sdb
+								inDDXdiVLqJ1
+								CAJ2Z9h6XrGt
+								ToEMfQkhIsNY
+								HaTc3aTEBD8+
+								Zu7d3btENMxW
+								pgNdW7EBAHbl
+								f77+aYIalivk
+								ZbzW+HrgyLsw
+								cIIdfY2UI8N0
+								iBHyJLA6MEfM
+								UPiuiDRdTgND
+								n+wdjWFf8I8z
+								qJkWfSWROLcN
+								Ro/tRxQuDBYY
+								GDLzTH8jXNgK
+								ioAs7IvunMlt
+								Mr3BZLzw8J6q
+								cLTm7dDUmajy
+								u7f78U6U57W6
+								m3obBSL8vHVd
+								0R5i/oLPiqSe
+								3KjMYxOHtNRS
+								XYHfWcv0jycS
+								fyrsrxMC+mZj
+								Vkk79CL24tSg
+								ULF4e8BAFGjb
+								WTkxsufU5Zu8
+								Z+KsxbrsJ807
+								cZU9xF4e1C+v
+								+QcuqQtwZLFl
+								2dGwctf5OKsa
+								GtnhZGp6r6w5
+								FTZ25ThTLOnT
+								74uWjZKKHmbs
+								ztVMnzkp8WbZ
+								OoxEGD6rqibn
+								fvJZZiCo0vCy
+								KUuoCtpu9Y2i
+								zI9OFQIp+BqX
+								uiV3DODxz7DD
+								+MMnCkN0cRiC
+								6K/pLc02u+Vh
+								F6lG7A3IzGff
+								ES6W5JW4H4Jm
+								DhLinIUSy7kq
+								xPYuvR4pOax7
+								/5E8qEpgTveO
+								2d1ndl9ELXIt
+								B0Hug0608mpj
+								ztWB1awW3e26
+								8a31Px71Jpim
+								Ve5nLQL1IlyO
+								TDQZ+5Ajp95Z
+								XXDTnp6zn9gw
+								JeLp7GhUmAjL
+								kJ8VC7DCKmNp
+								hcGnKWhGv5wr
+								5WayxntTsGJd
+								uKCQFKFM77DW
+								hfW36j7JHE9a
+								A00/CukQErl8
+								sBf3cpvPZyL3
+								BlR7+lcFa2oK
+								1fByHk3ZpTgn
+								Vfy8U+WN8npX
+								71T+Lc2roNr4
+								ZTrRPe86HuQN
+								heZcs9Vg7Xp6
+								5kNSPpY+BmdI
+								WL4lrc/0oH16
+								VSB12gd7Ld4Z
+								S3t6OUI9alqR
+								UR7Olu9PyymT
+								3J6V1xtwk7Td
+								E7jLGkvPnLuh
+								3QnQ5GHEGO7H
+								1zEZiu0X3Deh
+								s9P1F5IfEnOm
+								/kJ3IGfo+djg
+								VIJW7GckO4N0
+								ygf+x6Y2tLq3
+								FRLqevtv6KuU
+								rxjr7b9HbL6/
+								PCmfcoWq5+1B
+								5PKl5e8ivB+c
+								2M07c1TXJVdj
+								OLZH/bZzWRvU
+								o+f6B6MbT2+u
+								TeomydjcB8AM
+								U7W1OOqbUzvv
+								9HF/pKN1NXJb
+								vXZQoG1Jlxhg
+								P05JJMWf+ly8
+								5tMNG/BRwWiA
+								J5DixcZTRmN+
+								EgXwQ4UQMoqd
+								caWx7jlvF+7g
+								Rd0LTW9xL/JZ
+								iDZN46m/fVkl
+								b6d/7qo4wkt7
+								HG9CIxU/pdZE
+								WGRu4CAwmTre
+								EXu1UnMNvUJ3
+								BaJJysxGds+n
+								8OQVpdDIKHOo
+								mpMZiW8OOGoH
+								PBhiUpVipnsy
+								IuZtruPnEziy
+								s5i25TdZj7tY
+								6KQMWwszkyv3
+								mRCZbDcZ1w5o
+								WbGsbq07fS9i
+								e+KRf4pGYkJM
+								L+mZmT/L2hf8
+								fO2OAG41I32t
+								sqxa2Cfn/feE
+								0CKCCICssTgO
+								XOfSNWP7wi5z
+								JZogr5lAa4N2
+								mMmGJ+duxs6Y
+								DZxS7Yox7nKR
+								KVTsyxuVBcWY
+								YFS3GGWvl67q
+								mzal9Oj6+yfd
+								+k+Y3hmRAXVj
+								vmbb93itCKty
+								pwYPIvOrJ8ez
+								pxDTcc/eDj+N
+								xV7unGiJC/l0
+								JIiZJaskYt5R
+								s3wqQFR60vBl
+								78pqSEmQz8vU
+								5YeYcpKr6/Mj
+								HEXKzyh0CYWi
+								4z9LNyrT7gHH
+								Zz9wBWow5I4M
+								gd3FQVZY2yBA
+								4m6KX2ZzEncV
+								rWjeXDH32pZy
+								9YkAlXPLi6bc
+								nlTnooXd4xc6
+								zOWuMTOKszaF
+								SrdWPrTfbR5t
+								pybj5zCCk7uO
+								qVoSlcW1x6ED
+								BrbKt6IoSC2m
+								k5ROJF2VfCb2
+								PmcTw1r1ZdiW
+								MgLoSIcTS1rR
+								cy37adcb6VU0
+								nlwJTNJ/l1f5
+								oGvOTwaoc/Gb
+								OGW70tzBWK+t
+								7VKrk7QQBeEN
+								grs1DwPPTk2f
+								cPIeiTPc+7hT
+								r7yykDSZINu/
+								vnw7lgNN5FQW
+								2N6z5tmJC+ND
+								lMwiygu1n43l
+								NvwcA740Leoe
+								2MKu3mnOcQrz
+								fwy49wqnqbJ+
+								cbP/kDlDCKC6
+								sAx80U/ui4B3
+								LV7KICqVfVTB
+								0Lr+9sTvlaBv
+								GrQywuUH6EFB
+								JHcx7eR9FbJ0
+								vm9vGBsZJ+42
+								nqI5gFzfKSHF
+								V2s51J4lqmvG
+								uRLwzN2YLRQh
+								KcXNGS0jslw4
+								QJxezqwnKhnS
+								gVJrn22GBF74
+								OwfoDit+/lr6
+								6vKAhlyX9XPH
+								j+s8zhVZTQhy
+								SbvRhB+KWOsb
+								P7w0zgQTwsmu
+								btAZHIRn3o35
+								5lSxqE5jMt3y
+								7jI/B2Qz5KbR
+								VOUR1j65tqDw
+								4z3XQKgzGFXF
+								t3KfLGJwZY44
+								sENtPcJuM4Zf
+								pdxtp5Mr/MTi
+								2oZWQVbPWDox
+								5uW9qfpXwa/P
+								Ph0bwVG2HokL
+								zRjYDbTCl7dj
+								5RXZ9u9Vhq6T
+								Vj0dbzIn2UeH
+								j+04kz4OGepT
+								ymeh5J6w0lui
+								/0B1lZySZn86
+								3jqobPi9QUqV
+								y8zbd95yjLsl
+								1j5iarFB9D4c
+								p8ED0K+zoAFn
+								42j0w5dKW4SO
+								xRgsRdjLSFsS
+								7TdJp84xLU2D
+								GmqOY1yrCtdD
+								woAF1+bLGWxT
+								chYVpWJY01H3
+								FHWTICZpVkY4
+								ii9Xfdoqbt3k
+								7TgwlQkXUBu+
+								uRyWhHphYvdp
+								pk1sqaKh7edL
+								4eRW+edfdLzc
+								RDqL5l/b4IqZ
+								yrLW4t/5DZt/
+								4IwEFQzKragl
+								KFY0JwtuClvP
+								Y2qKpPO4mTTl
+								S+Grk7cHZ2rG
+								ZCoOPvZ+eBTq
+								72qevSbwvU5v
+								QWnIB2uLtfOP
+								z42dOOnENirS
+								2CRhW4QI03IX
+								1SPbQq8aJKq9
+								ep7m8i1m1vGe
+								hq3dhX0Is2Rh
+								ZgMH9+x2n7Wp
+								yLUKt8zasb3N
+								xR0VErbnZx5t
+								MY17TqdUBHEK
+								6XlH0wNKTKMN
+								K2KCJVjpVqte
+								BhlN4fKwl9UK
+								Lm211VAa6qVT
+								gttFB7uscLKC
+								qXUBHPjBR6Gb
+								Qr0JdrLhKUnT
+								J87HQsu+c6Rr
+								w8morKH8a6EP
+								3/QQLX4pktTg
+								pIpCD7W83uhp
+								0PsuPZpyhDx5
+								xQE1DtxgEGN9
+								lpjbDEqJ/jSp
+								GMaaWh+wpEo+
+								yi4pc+n+o+3a
+								sx0sMVOe9Xql
+								nIPK1uOE2qAZ
+								hcPVjQ8+F2Xi
+								bKySWjAB+H+C
+								mkkVUUK4nxSd
+								O6viKk8lNBwe
+								NKUfvmaQvnqo
+								LCfFsXfxe+8G
+								HUcWb4N4wt5R
+								nyPm6h5rCDkL
+								vFRmdeBK4Ih5
+								t2AJLOBA4xSk
+								lr4wRE5QOKsI
+								XqovivNCVEab
+								PXO7lDDYWPE8
+								uYxyHP3ZoVD/
+								gqe31dz4vexp
+								rLCb67dThVzB
+								j0U69Uf7Mr57
+								eyZNosGU4e15
+								rx4W6z/eHKOc
+								J2113pjvgs17
+								dWg5qsn1hhRH
+								FlklWmGAJont
+								/pebv2kFH3/N
+								Ep6hL2e/XBRB
+								nHG63m1JXpkG
+								eJ8IdT/xbjI1
+								CnKeJ4rHv5HU
+								9UcxPH8T1BYe
+								6tdicXss3+xl
+								N/eaz+zwuquv
+								x8sHnfo43rzB
+								75lQSgLVjKrB
+								m4kUNjI457FZ
+								gaycdVEmzuLi
+								ehL1ksPNDPpL
+								P2a+Vt+8QKRk
+								kMddHo59bV/F
+								yT19jB5SndJk
+								E+YiSRdAR1Po
+								bAZURtkt7oqw
+								yrmr7RiuJaeR
+								cW+oysrUOFV2
+								9TcczU1oLR8K
+								Y2mYHtfPHSvV
+								OoRrJL3RN+6N
+								hvYIj/1s/oCh
+								FgyfWZR4r/LA
+								WkU5fyFmtZJG
+								bgYTP2ybuk2T
+								7eJWxi1sNdOW
+								oQ9nyNFZTQbV
+								MH1RKB5Bg1MP
+								vlNYx6VvX6G5
+								TmV7O8D4jEVO
+								Z+ZMQe1wRYch
+								K4urhm8nqgBz
+								j0OYnMPyQ6yQ
+								1zhapJVg49Md
+								00elbiEkdbyE
+								tvkY4NMDJYqy
+								JFPJnt5uVDwv
+								GnuJ8fCyWtG+
+								i3OxnSLSkG9n
+								UMYoIRaZmxgl
+								7P02vII2dKLe
+								n/nFqs7aRx0z
+								kxD255I3F2Jz
+								U9Bq0q2e/Tm5
+								w7RqUGqKpLzO
+								0k45rb21qGLt
+								Xtut18kWPEZe
+								m7OJa/FEXV7k
+								YsOCk44l7GTN
+								qpr063kToD5C
+								aF1ARxOtdtGl
+								xfDGzaAiaTdi
+								2p4+R2+dmdpT
+								dRnZO2d578J+
+								BnT6bT9vmCMf
+								o7q2ayKEaTt5
+								wlKxqdRlt97S
+								W1B7vORSyuni
+								swvKhARgPyep
+								3lbRF9W5Vz+z
+								vaKgxv7dCDly
+								kMK2vuDMPpO3
+								m6honH/kp03B
+								c7areY+YgZTG
+								nz95xMNUQVWW
+								J3AgddOqMOuk
+								8FvKi63E0k+z
+								axrveqk6kkgI
+								GjJNOFa19PYX
+								vGMIMiVpRYX0
+								mPwqG9rY8+Rs
+								xW/2kBCSJOAu
+								XxuSdO5nRjxe
+								JZW1O0zJzmu6
+								AFjMo4vkY5aR
+								u5xFrDF1/76P
+								JKWEMQbNFV7N
+								EeW8t/RGcZGs
+								7kl6DEQvMPJV
+								6g0a9v5quN9x
+								+q5dxSfmDIpL
+								ON0IyeEqUFp/
+								pN/b0fVWA2ae
+								Obd3y5TqKTjy
+								VIM8wgI5r+qi
+								5m6SmMnLH5/Y
+								rHTLnSVRnvCl
+								VYwYSC2HK/kP
+								0j26R7HgbX2V
+								X87LJrbjuSnJ
+								i4ftc4/EDcgi
+								nJQnFyUVwhRC
+								Py+rkryII0hg
+								tHyw662aPNF2
+								0dX8iQ17ol0M
+								5CzVz5OHSst2
+								/mpZJwIC8YP0
+								YF8KCGrnmKDZ
+								RPqUFLlWvBVf
+								fqX9NBosREoa
+								RtieihLaf4gb
+								vknhRZGys8c3
+								SMsrUb+p+dbm
+								h6HsLh3YA2sQ
+								2BRicqFmyvm9
+								WBrMAnuUqvmg
+								KgTmbI6WWHbz
+								NhqR7WVe8KKQ
+								2xXI9ogk/qnx
+								lsa/8k7TNx9o
+								xthuxVsBHgTh
+								d1ez8TnuUt3M
+								1EVzh5inF04x
+								Q3JCVVfbuMDq
+								Jv5qVt9bRB7N
+								FRtzMnLpNXrH
+								FdxRKUwmtztc
+								bHwSx0eu5Hld
+								pwBw8BLIWJaQ
+								TV6gJr7E5GKO
+								iZAlFT39oddv
+								c9PKJDIj4Fa6
+								RwXTsYKhN8Bp
+								PuxdbuFC8v0O
+								inQ/gUqoLiVx
+								6G6tCTFV3jef
+								gD4qKsLsMwbd
+								o5vhEmNFZRp8
+								d9sH8pRjq+ai
+								29blGsl4uQaD
+								TCSeSwbcj4hn
+								Tx+Z72lzSXkl
+								yXK9nqW6+2Wj
+								o/Zxw5OOfMbH
+								3E5xZ3bLvLRy
+								frhYBn7oSBKI
+								uhvk0rBZWfsG
+								K2vW7ElQ2gse
+								ST54xMLL8lCd
+								PmQ7TaCkc6rm
+								kOq+D0ospK9o
+								+nkNrJSIUu1+
+								0nE/VydN8EfS
+								nuLCH/d1mwQV
+								QLUzAu8XJ41t
+								VS4RBEu4wU0y
+								C2mLZe2KKNBo
+								XHXD7EglzsTc
+								wDaccWRLVNDA
+								i8Mr0esz1fcH
+								Pywa6fNLBxwk
+								dTRobL6BaliD
+								xlG7Pk/MQ7YG
+								BxDSvaTmLXzb
+								xGk6NS1tP8dN
+								iD0/P8W6RZiU
+								tjoGi2Mm17d1
+								k7ikze9Ed7Vk
+								JAAXHZ4V1unC
+								5GOjIgh1LmZd
+								VjwWeX/vm7G+
+								tOSjAtpbDsRr
+								T+bITBVmeZbG
+								jOw4h48nUbEN
+								gemr8tHilxe7
+								egN40skNEgHP
+								n/ZaeIq9EWIb
+								WPBzzijhhtNz
+								CNHNaj9v1aBo
+								nE9i7t3ryGUE
+								6e2h2B3RwyZr
+								nF3byxcEjPK5
+								5Yt4h47IR0q+
+								9AmLRTq2rG42
+								+2kJirl32Bre
+								LjgYD+ax/f40
+								zdCwt36N++fF
+								A9EkMbqUGuvi
+								kNnQYBq9uQpU
+								JBOZmAavrcIb
+								I3W9ksvznYGn
+								7wcdFh+so9vt
+								J+cIkUSnBK1i
+								PeCrsNLCpoSv
+								Ol0b1Ja6AO9G
+								N/Ja5fZ6jk7F
+								W/SR/eJrrOYb
+								84Ch+CO16/U9
+								Wk2b4j/4j7VM
+								Ojgi4k6HvLMm
+								Ir4lXdBMRSOa
+								Vs7MoI65VnQu
+								XFNzj9Q7Z6Sb
+								XlEaFK5xsPdF
+								k7GqSpcQxFAR
+								hHHyEF6kgdAt
+								Zul5JZ309bLZ
+								6KYdKTC+glHz
+								HklHjIM2ha0k
+								vLi/NIuiKcpv
+								S7bwMgoSe4gx
+								5WIH7GT3HtRY
+								6RqGgzZ5f9Tr
+								fE35wNegKA8X
+								FJhEPRt9uHqq
+								Ql9Of5U49VFP
+								oEs/5WbP8L0A
+								eiO+6xwenahU
+								1aKMSYfwObJT
+								76DD9fxVCBPf
+								3UyjMuNoYNiy
+								oeGoeSTr16cn
+								C4Hio3SGCcOc
+								EhPsQyk7YgIg
+								U+NHuneMPCgQ
+								QZJnL2i7HyUd
+								PrZUDE5faIBZ
+								D9oY2ELMG/SC
+								HVtn371izdNf
+								fQ2Uf214U3p8
+								yJLOl86Tje5b
+								sGodm3XaaUl/
+								iHtZ//smSela
+								EbF0u+kaiiJp
+								JRnrDJVmK4ld
+								HVZngJ9zFKZE
+								Gw1uO/7A9SkD
+								0L1FPQ39+nn1
+								E6sOc1xq+C3G
+								FA5pY/a4Of/y
+								nV4KVtP3X0I6
+								SPxTkShG0y/E
+								klQWw451HWVL
+								b5Vitvjz0SMk
+								Y9qutx68qAmt
+								jDCZnRsSlL9k
+								67LBURTEHXur
+								DIatm37u8ZbO
+								Kgic3OnfDoxs
+								6TikdU6YL6Sd
+								n7uCUJGNDi4p
+								THzv3oxOJa0c
+								6yZC+RyZfDBi
+								Z5e2pyy1wN14
+								OOXgUhGWOTxD
+								4EYWXk1hMUVp
+								IOZBo8ddM1HK
+								ZCH0xojAI/Is
+								nb3tOjSqkojQ
+								pLGp9G67OGcf
+								GKvDfquSvnFC
+								wL2zyHEtddA9
+								fK7seFbciFOw
+								Lf7Gle14JGcr
+								5W2td+8u1Woc
+								p8qHKC6k8vF1
+								xd21049p/SD4
+								AKcaRZIhwLYp
+								EQ/6Dx/Af/CD
+								/hfwu0P/Q/oA
+								dYFDMDiUKwTj
+								DPgvfQrmGQpl
+								bmRzdHJlYW0K
+								ZW5kb2JqCjEx
+								IDAgb2JqCjcw
+								MDkKZW5kb2Jq
+								CjEyIDAgb2Jq
+								CjE0MjQKZW5k
+								b2JqCjEzIDAg
+								b2JqCjYwMDAK
+								ZW5kb2JqCjE0
+								IDAgb2JqCjU0
+								MAplbmRvYmoK
+								MTUgMCBvYmoK
+								KE1hYyBPUyBY
+								IDEwLjExLjEg
+								UXVhcnR6IFBE
+								RkNvbnRleHQp
+								CmVuZG9iagox
+								NiAwIG9iagoo
+								RDoyMDE1MTIx
+								MTA1MjMzM1ow
+								MCcwMCcpCmVu
+								ZG9iagoxIDAg
+								b2JqCjw8IC9Q
+								cm9kdWNlciAx
+								NSAwIFIgL0Ny
+								ZWF0aW9uRGF0
+								ZSAxNiAwIFIg
+								L01vZERhdGUg
+								MTYgMCBSID4+
+								CmVuZG9iagox
+								NyAwIG9iago8
+								PAovRW5jb2Rp
+								bmcgL01hY1Jv
+								bWFuRW5jb2Rp
+								bmcKL1ByZWFt
+								YmxlIChFU2Fu
+								bm9wRVNzbGFz
+								aGRvY3VtZW50
+								Y2xhc3NbMTBw
+								dF1FU2xlZnRi
+								cmFja2FydGlj
+								bGVFU3JpZ2h0
+								YnJhY2sKRVNz
+								bGFzaHVzZXBh
+								Y2thZ2VbdXNl
+								bmFtZXNdRVNs
+								ZWZ0YnJhY2tj
+								b2xvckVTcmln
+								aHRicmFjayAl
+								cG91ciBsYSBj
+								b3VsZXVyCkVT
+								c2xhc2h1c2Vw
+								YWNrYWdlRVNs
+								ZWZ0YnJhY2th
+								bXNzeW1iRVNy
+								aWdodGJyYWNr
+								ICVtYXRocwpF
+								U3NsYXNodXNl
+								cGFja2FnZUVT
+								bGVmdGJyYWNr
+								YW1zbWF0aEVT
+								cmlnaHRicmFj
+								ayAlbWF0aHMK
+								RVNzbGFzaHVz
+								ZXBhY2thZ2Vb
+								dXRmOF1FU2xl
+								ZnRicmFja2lu
+								cHV0ZW5jRVNy
+								aWdodGJyYWNr
+								ICV1dGlsZSBw
+								b3VyIHRhcGVy
+								IGRpcmVjdGVt
+								ZW50IGxlcyBj
+								YXJhY3SPcmVz
+								IGFjY2VudHWO
+								cwpFU2Fubm9w
+								ZW5kKQovRXNj
+								YXBlZFByZWFt
+								YmxlIChFU2Fu
+								bm9lcCU1Q2Rv
+								Y3VtZW50Y2xh
+								c3MlNUIxMHB0
+								JTVEJTdCYXJ0
+								aWNsZSU3RCUw
+								QSU1Q3VzZXBh
+								Y2thZ2UlNUJ1
+								c2VuYW1lcyU1
+								RCU3QmNvbG9y
+								JTdEJTIwJTI1
+								cG91ciUyMGxh
+								JTIwY291bGV1
+								ciUwQSU1Q3Vz
+								ZXBhY2thZ2Ul
+								N0JhbXNzeW1i
+								JTdEJTIwJTI1
+								bWF0aHMlMEEl
+								NUN1c2VwYWNr
+								YWdlJTdCYW1z
+								bWF0aCU3RCUy
+								MCUyNW1hdGhz
+								JTBBJTVDdXNl
+								cGFja2FnZSU1
+								QnV0ZjglNUQl
+								N0JpbnB1dGVu
+								YyU3RCUyMCUy
+								NXV0aWxlJTIw
+								cG91ciUyMHRh
+								cGVyJTIwZGly
+								ZWN0ZW1lbnQl
+								MjBsZXMlMjBj
+								YXJhY3QlQzMl
+								QThyZXMlMjBh
+								Y2NlbnR1JUMz
+								JUE5cyUwQUVT
+								YW5ub2VwZW5k
+								KQovU3ViamVj
+								dCAoRVNhbm5v
+								dE9FU2Fubm90
+								ZW5kKQovRXNj
+								YXBlZFN1Ympl
+								Y3QgKEVTYW5u
+								b2VzT0VTYW5u
+								b2VzZW5kKQov
+								VHlwZSAoRUV0
+								eXBlNEVFdHlw
+								ZWVuZCkKL0Nv
+								bG9yIChFRWNv
+								bDAuMDAwMDAw
+								IDAuMDAwMDAw
+								IDAuMDAwMDAw
+								IDEuMDAwMDAw
+								RUVjb2xlbmQp
+								Ci9CS0NvbG9y
+								IChFRWJrYzEu
+								MDAwMDAwIDEu
+								MDAwMDAwIDEu
+								MDAwMDAwIDEu
+								MDAwMDAwRUVi
+								a2NlbmQpCi9U
+								aXRsZSAoRUV0
+								aXRsZUVFdGl0
+								bGVlbmQpCi9N
+								YWduaWZpY2F0
+								aW9uIChFRW1h
+								ZzIwLjAwMDAw
+								MEVFbWFnZW5k
+								KQovQmFzZWxp
+								bmUgKEVFYmFz
+								MC4wMDAwMDBF
+								RWJhc2VuZCkK
+								Pj4KZW5kb2Jq
+								CnhyZWYKMCAx
+								OAowMDAwMDAw
+								MDAwIDY1NTM1
+								IGYgCjAwMDAw
+								MDgyMzEgMDAw
+								MDAgbiAKMDAw
+								MDAwMDIyMSAw
+								MDAwMCBuIAow
+								MDAwMDAwMzkx
+								IDAwMDAwIG4g
+								CjAwMDAwMDAw
+								MjIgMDAwMDAg
+								biAKMDAwMDAw
+								MDIwMiAwMDAw
+								MCBuIAowMDAw
+								MDAwMzIzIDAw
+								MDAwIG4gCjAw
+								MDAwMDA1MjEg
+								MDAwMDAgbiAK
+								MDAwMDAwMDQ3
+								MiAwMDAwMCBu
+								IAowMDAwMDAw
+								Njg4IDAwMDAw
+								IG4gCjAwMDAw
+								MDA5MjAgMDAw
+								MDAgbiAKMDAw
+								MDAwODA1MyAw
+								MDAwMCBuIAow
+								MDAwMDA4MDc0
+								IDAwMDAwIG4g
+								CjAwMDAwMDgw
+								OTUgMDAwMDAg
+								biAKMDAwMDAw
+								ODExNiAwMDAw
+								MCBuIAowMDAw
+								MDA4MTM2IDAw
+								MDAwIG4gCjAw
+								MDAwMDgxODkg
+								MDAwMDAgbiAK
+								MDAwMDAwODMw
+								NiAwMDAwMCBu
+								IAp0cmFpbGVy
+								Cjw8IC9TaXpl
+								IDE4IC9Sb290
+								IDggMCBSIC9J
+								bmZvIDEgMCBS
+								IC9JRCBbIDw4
+								ZTQ4MGUyZjQ1
+								YjQ1OGE4OWUx
+								OGJiZDZjZDhh
+								MDI2Nz4KPDhl
+								NDgwZTJmNDVi
+								NDU4YTg5ZTE4
+								YmJkNmNkOGEw
+								MjY3PiBdID4+
+								CnN0YXJ0eHJl
+								Zgo5Mzk3CiUl
+								RU9G
+								</data>
+							</dict>
 						</array>
 					</dict>
 					<dict>
@@ -23153,165 +24280,161 @@
 	D8R3oAWKUyFwRjacZ7H6VLUEMbIzseAxBCjoOP61PQAUUUUAFFFFABRRRQAUUUUAFFFF
 	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
 	RQAUUUUAf//U3KKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA11LLtB257jrUccciH
-	LvkDgADH5+pqaigAqun/AB9Sf7qfzarFV0/4+pP91P5tQBYooooAKKKKACiiigAqrJdI
-	lzHbDlnyT7DFTSyGNCVG5uw9TXNRR3Sais1wOd+CeoBI6fkaAOpooooAKKKY8sUePMYL
-	n1OKAH0UgZScAjOM/hUTXFunDyIPqR24oAmopqOki7oyGB7g5FOoAKKKKACiiigAoooo
-	AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
-	KACiiigAooooA//V3KKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFV0/4+pP
-	91P5tViq6f8AH1J/up/NqALFFFFABRRRQAUUUUAHTk1EmyaIOBgNhv6illcIuSM5IGPq
-	cVJQAUUUUAFUbgqs4YSCNtvVgNpGenbmr1FAGbDKkbpJJiNWjwOw4PvQf+PLd/ek3D6G
-	TIrSooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
-	ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP//W3KKKKkYUUUUAFFFFABRRRQAU
-	UUUAFFFFABRRRQAUUUUAFV0/4+pP91P5tViq6f8AH1J/up/NqALFFFFABRRRQAUUUUAR
-	lx5oixngtn0xUlRo5ctxgKcD3qSgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
-	KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
-	iiigAooooA//19yiiipGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABVdP+PqT/dT
-	+bVYqun/AB9Sf7qfzagCxRRRQAUUUUAFIxCqWPYZpajkZlC7RklgPw7/AKUAOjLMis4w
-	SASPSnUUUAFFFFABRRRQAUzzE3Fc8gZp9VACtzI5U/dATjjuT+tAFlHWRQ6HIIyDTqrh
-	vJaO3C8EYz9B6VJFJ5sYkAwG5H07UASUVTdXDqFYlt+SewXPQ/yFXKACiiigAooooAKK
-	KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
-	iiigAooooA//0NyiiipGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABVdP+PqT/dT
-	+bVYqun/AB9Sf7qfzagCxRRRQAUUUUAFR7n83aB8u3JPvnipKjjLtuLjHzED6CgCSiim
-	u6xruc4FADqKjLsUDRLknoG+X+maGRnQBmKnvtoAJWVEyzhPc4/rXPzalfwTmDCse3HX
-	PSujCqAB1x0zzUCWyLM1wwzI3f0HoKAEtTdMm66CgnoB2+tWaKKAGNGjkMw5AI/A9aaI
-	UVVVOApBHJ7cVLRQBB9mh3+Z82c5+82M/TOKnoooAKKKKACiiigAooooAKKKKACiiigA
-	ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9Hc
-	oooqRhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVXT/j6k/3U/m1WKrp/wAfUn+6
-	n82oAsUUUUAFFFFADJX8qJ5P7qk/lTI3d4QwHzY/i4z71NURQxJiBRwc46D/AOtQAoRm
-	j2ynk9SuV/rmnIiooVeAKVTkAkYJGcGloAKKKKACiiigAooooAKKKKACiiigAooooAKK
-	KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
-	iiigAooooAKKKKAP/9LcoooqRhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVXT/j
-	6k/3U/m1WKrp/wAfUn+6n82oAsUUUUAFFFFABRRRQAySNZMZ4I5BHUUhcrIEKnB/iHTP
-	oakooAKKjVCrlgxwf4e2fUUsciyA4yCOCD1FAD6KTIzjuKWgAooooAKKKKACiiigAooo
-	oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
-	KKACiiigAooooAKKKKAP/9PcoooqRhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV
-	XT/j6k/3U/m1WKrp/wAfUn+6n82oAsUUUUAFFFFABRRRQAUUjEgZAzUCXG9Y3VTiQ4+n
-	Xn9KALFMkKqhLNtzxn0p9BIAyelAHNT6mUukZCHCAhiOA2a6KORJUEiHIYZFQvb2lyu5
-	kVge4/xFOt7aO2UpFnaTnBOcfSgCeiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
-	ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/
-	/9TcoooqRhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVXT/j6k/3U/m1WKrp/wAf
-	Un+6n82oAsUUUUAFFFFABRRRQA2RS6MgOCQRmooo2VEVgBsGBjnnGKnooAoCdxhWbkyE
-	dOcL/jjj61d3oSwyPl6+1OpAACT60AVrJla3G0g8n+Zq1RRQAUUUUAFFIGViQDkqcGq1
-	2zrCShwTwMf3icCgC1RUBys29m+ULyD0znrUqujcKQcelADqKgkmaM/cyNwUc8nPcfSp
-	6ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-	iigAooooAKKKKACiiigD/9XcoooqRhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV
-	XT/j6k/3U/m1WKrp/wAfUn+6n82oAsUUUEZGKAKd1fQWg+c5bso602wuJbqNp5BgE4UD
-	0FVLyxinSRo02snIb+8e/H9auaenlWixn+EsPyY0AXaKKKACiiigAooooAKKKKACop5l
-	ghaVuijNS1FLAk+BKMqOcepoAxdGuGklmVzkt8/+Nbrosi7XGR1/KqcNtAWS6gQIeeB3
-	Bq9QBDJEWhZE+8wOCfX1pSPKQeWBxgfhUtFAFWaKWQFQRncCrdwOKtUUUAFFFFABRRRQ
-	AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUU
-	UAFFFFAH/9bcoooqRhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVXT/j6k/3U/m1
-	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
-	AIZfZm3H88mpaAI0lWTIAII6ggioY7qNpmtnOJF7evuKsOX2/IAT7nFc62kXbSGXeinO
-	RjPH0oA6Siq9stwse25IYjuO/wBanZgoyaAFoqEXEZCEZxIcD6jP+FTUAFFFFABRRRQA
-	UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9Pc
-	oooqRhRRRQAUUUUAFFFFABTZJFjUu5wBRJIsal3OAKhjjaRhNMMEfdX+7/8AXoAI42kY
-	TTDBH3V/u/8A16sUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAR
-	yQpKQWzkdCCQf0pFhiQqVGCucfj1qWigCBraF+SDnduyCRzjHY05YI1wRk7TkZJPUY7m
-	paKACiiigAooooAKbIGKME+9g4+tOooArQoyxRpt27F6H1xilhkldd7FduWH4A4zViml
-	F2FABjGMY4/KgCvdgFEbHIkTH/fQq1TDFGyhWUMF6ZGaeAAMCgAooooAKKKKACiiigAo
-	oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9TcoooqRhRRRQAU
-	UUUAFNkkWNS7nAFEkixqXc4AqGONpGE0wwR91f7v/wBegAjjaRhNMMEfdX+7/wDXqxRR
+	LvkDgADH5+pqaigAqun/AB9Sf7qfzarFV0/4+pP91P5tQBYooooAKKKKACiiigAqs90i
+	XMdt1Z8n6ACppHKISo3N2Hqa5uKG7j1BJ7gdXwSORkjpQB09FFFABRRRQAUUUUAFFFFA
+	BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+	QAUUUUAFFFFABRRRQAUUUUAFFFFAH//V3KKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRR
+	RQAUUUUAFV0/4+pP91P5tViq6f8AH1J/up/NqALFFFFABRRRQAUUUUAFMAV1BxwcGlZt
+	o9cnH506gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+	CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//9bcoooq
+	RhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVXT/j6k/3U/m1WKrp/wAfUn+6n82o
+	AsUUUUAFFFFABRRRQA3d8wX2zTqarbifY4p1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
+	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+	RQAUUUUAFFFFABRRRQB//9fcoooqRhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV
+	XT/j6k/3U/m1WKrp/wAfUn+6n82oAsUUUUAFFFFABQTgZoprEjGB1NACqSVBPBoJCjcx
+	wB3NLVe62eSd5IGRyO3PX6CgCRZomXcrqRnGQe5pXljj/wBYwXvycVmM5dZOVk27GLoO
+	oDZwevIFW0dJbrfEwYKmCRyMk/8A1qAJ0nhlOI3Vj6Ag1JVaz/1H/An/APQjVmgApnmJ
+	uK55AzT6qAFbmRyp+6AnHHcn9aALKOsih0OQRkGnVXDeS0duF4Ixn6D0qSKTzYxIBgNy
+	Pp2oAkoqm6uHUKxLb8k9gueh/kKuUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAB
+	RRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//Q3KKKKkYUUUUA
+	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFV0/4+pP91P5tViq6f8AH1J/up/NqALFFFFA
+	BRRRQAU3J347Yp1NUk5z68UAOoopCQoyeKAF6UU3JK5UZ+vFBBYYJx9KAByAvLbfeufn
+	1G/guDBhWOeODznp3rosDj2qBLaNZmuGGXbv6D0FADbU3TJuugqk9l7fXmrNFFADGjRy
+	GYcgEfgetNEKKqqnAUgjk9uKlooAg+zQ7/M+bOc/ebGfpnFT0UUAFFFFABRRRQAUUUUA
+	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
+	ABRRRQB//9HcoooqRhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVXT/j6k/3U/m1
+	WKrp/wAfUn+6n82oAsUUUUAFFFFADXbahb0GaRWLJkdfen03G1cIPwoAMErhj+XFKAFG
+	BSg5HpRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAB
+	RRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/0tyiiipG
+	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABVdP+PqT/dT+bVYqun/AB9Sf7qfzagC
+	xRRRQAUUUUAFFFFACMobr26UhbDYxwe9OooAKKaFwxOeD2pVYN07dRQAtFGRnFFABRRR
 	QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
+	UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/9PcoooqRhRRRQAUUUUAFFFFABRRRQAU
+	UUUAFFFFABRRRQAVXT/j6k/3U/m1WKrp/wAfUn+6n82oAsUUUUAFFFFABRRRQAUUjEgZ
+	AzUCXG9Y3VTiQ4+nXn9KALFNcqqksdvvTqCQBk8CgDnbjVNl2jRHcqAhiOhzXQRukqCR
+	DkMMg1A9va3K7mRXB7//AF6dBbx2ylIshc5wTnFAE9FFFABRRRQAUUUUAFFFFABRRRQA
+	UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+	AFFFFABRRRQB/9TcoooqRhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVXT/j6k/3
+	U/m1WKrp/wAfUn+6n82oAsUUUUAFFFFABRRRQA2RS6MgOCQRmooo2VEVgBsGBjnnGKno
+	oAoCdxhWbkyEdOcL/jjj61d3oSwyPl6+1OpAACT60AVrJla3G0g8n+Zq1RRQAUUUUAFF
+	IGViQDnBwarXbOsJKHBPAx/eJwKALVFQHKzb2b5QvIPTOetSq6NwpBx6UAOoqCSZoz9z
+	I3BRzyc9x9KnoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+	iiigAooooAKKKKACiiigAooooAKKKKAP/9XcoooqRhRRRQAUUUUAFFFFABRRRQAUUUUA
+	FFFFABRRRQAVXT/j6k/3U/m1WKrp/wAfUn+6n82oAsUUUdaAKl1fQWg/eHLdlHWmWFxL
+	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
+	RJIsal3OAKhjjaRhNMMEfdX+7/8AXoAI42kYTTDBH3V/u/8A16sUUUAFFFFABRRRQAUU
+	UUAFFFFACYxgAcUtFFABRRRQAUUUUAFFFFABRVS5EhdQmWAByobaT0wfwqqXLtEq+Y4w
+	+QG2tkEdeR0+tAGrRWQGkZUX5z+8YbdxDAAHgnP49alkDqIkCyDcxyu85PB75/rQBoBQ
+	CSO9A3ZO7GKZCu2MAhl9mbcfzyaloAarBvXj1qCO6jaZrZjiRe3qOuRVht2PkAJ9ziue
+	fSbySUzGRAxOeM8fpQB0VFQW63Cx7bghmHcd/rUzMFGTQAtFQi4jIQjOJDgfUZ/wqagA
+	ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+	AKKKKAP/09yiiipGFFFFABRRRQAUUUUAFNkkWNS7nAFEkixqXc4AqGONpGE0wwR91f7v
+	/wBegAjjaRhNMMEfdX+7/wDXqxRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+	FFFABRRRQBHJCkpBbOR0IJB/SkWGJCpUYK5x+PWpaKAIGtoX5IOd27IJHOMdjTlgjXBG
+	TtORkk9RjualooAKKKKACiiigApsgYowT72Dj606igCtCjLFGm3bsXofXGKWGSV13sV2
+	5YfgDjNWKaUXYUAGMYxjj8qAK92AURsciRMf99CrVMMUbKFZQwXpkZp4AAwKACiiigAo
+	oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/1Nyi
+	iipGFFFFABRRRQAU2SRY1LucAUSSLGpdzgCoY42kYTTDBH3V/u//AF6ACONpGE0wwR91
+	f7v/ANerFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
 	UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
-	FFFABRRRQAUUUUAFFFFABRRRQB//1dyiiipGFFFFAASAMmmPIiJ5jHis7VrnyLYop+aT
-	gfTvUdldrdEPIGLrwABwPfPqaANCONpGE0wwR91f7v8A9erFFZ+I3uNoPyrHliD13dCf
-	yNAGhRSIoVQo6AY5paACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+	FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//V3KKKKkYUUUUABIAyaY8iInmMeKzt
+	WufItiin5pOB9O9R2V2t0Q8gYuvAAHA98+poA0I42kYTTDBH3V/u/wD16sUVn4je42g/
+	KseWIPXd0J/I0AaFFIihVCjoBjmloAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
 	iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
-	AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/9bcoooqRhRRRQBRmsIrifzp
-	yWAGAvQVcREjXagCgdhTqKACmCKMdFHHtT6KACiiigAooooAKKKKACiiigAooooAKKKK
+	AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//1tyiiipGFFFF
+	AFGawiuJ/OnJYAYC9BVxESNdqAKB2FOooAKYIox0Uce1PooAKKKKACiiigAooooAKKKK
 	ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
-	igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/
-	19yiiipGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
+	igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+	oooAKKKKAP/X3KKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
 	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
-	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//0NyiiipGFFFF
-	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Q
+	3KKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
 	RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
-	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//0dyiiipGFFFFABRRRQAUUUUA
+	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//R3KKKKkYUUUUA
 	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
 	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
-	RQAUUUUAFFFFABRRRQAUUUUAFFFFAH//0tyiiipGFFFFABRRRQAUUUUAFFFFABRRRQAU
+	RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//S3KKKKkYUUUUAFFFFABRRRQAU
 	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
 	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
-	ABRRRQAUUUUAFFFFAH//09yiiipGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+	ABRRRQAUUUUAFFFFABRRRQAUUUUAf//T3KKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRR
 	RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
 	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
-	FFFFAH//1NyiiipGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
-	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
-	RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//1dyi
-	iipGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
-	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
-	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//1tyiiipGFFFFABRR
-	RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
-	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
-	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//19yiiipGFFFFABRRRQAUUUUAFFFF
+	FFFFABRRRQAUUUUAf//U3KKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
 	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
 	RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
-	UUUAFFFFABRRRQAUUUUAFFFFAH//0NyiiipGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+	UUUAf//V3KKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
 	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
-	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
-	RQAUUUUAFFFFAH//0dyiiipGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
+	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//W3KKK
+	KkYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
 	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
-	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
-	AH//0tyiiipGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
-	RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
-	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//09yiiipG
-	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
-	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
-	RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//1NyiiipGFFFFABRRRQAU
-	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
-	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
-	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//1dyiiipGFFFFABRRRQAUUUUAFFFFABRR
-	RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
-	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
-	FFFFABRRRQAUUUUAFFFFAH//1tyiiipGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
+	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//X3KKKKkYUUUUAFFFF
 	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
 	RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
-	UUUAFFFFAH//19yiiipGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Q3KKKKkYUUUUAFFFFABRRRQAUUUUA
 	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
-	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//
-	0NyiiipGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
+	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+	RQAUUUUAFFFFABRRRQAUUUUAf//R3KKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
 	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
-	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//0dyiiipGFFFF
+	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
+	ABRRRQAUUUUAf//S3KKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+	RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
+	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+	f//T3KKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
+	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+	RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//U3KKKKkYU
+	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
+	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//V3KKKKkYUUUUAFFFFABRR
+	RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
+	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//W3KKKKkYUUUUAFFFFABRRRQAUUUUAFFFF
 	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
 	RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
-	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
+	UUUAFFFFABRRRQAUUUUAf//X3KKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
+	ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+	RQAUUUUAf//Q3KKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
+	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+	FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//R
+	3KKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+	RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
+	UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 	</data>
 	<key>DKDChangeTimeStamp</key>
-	<string>2015-12-10 17:45:49 +0000</string>
+	<string>2015-12-11 05:23:42 +0000</string>
 	<key>DKDCreateTimeStamp</key>
 	<string>2015-12-10 17:24:32 +0000</string>
 	<key>DKDDisplayGraphicDetails</key>
@@ -23398,6 +24521,91 @@
 			<key>PrecisionPercents</key>
 			<string>1</string>
 		</dict>
+	</dict>
+	<key>DKDExportDoc</key>
+	<dict>
+		<key>BMPExporBackground</key>
+		<string>No (White) Background</string>
+		<key>CSVStringEncoding</key>
+		<string>Unicode (UTF8)</string>
+		<key>DXFExportLayers</key>
+		<string>All</string>
+		<key>DXFExportRevision</key>
+		<string>AutoCADLT 2010</string>
+		<key>EPSColorSpace</key>
+		<string>RGB</string>
+		<key>EPSExporBackground</key>
+		<string>No (Black) Background</string>
+		<key>EPSLatexPsfrag</key>
+		<string>NO</string>
+		<key>ExporBackground</key>
+		<string>No (Black) Background</string>
+		<key>ExportButtonDragFormat</key>
+		<string>File</string>
+		<key>ExportColorTable</key>
+		<string>256 Best</string>
+		<key>ExportCompresion</key>
+		<string>1</string>
+		<key>ExportContent</key>
+		<string>Just Graphics</string>
+		<key>ExportExpand</key>
+		<string>1</string>
+		<key>ExportFileExtension</key>
+		<string>pdf</string>
+		<key>ExportImageAntialias</key>
+		<string>YES</string>
+		<key>ExportImageInterpolation</key>
+		<string>Automatic</string>
+		<key>ExportPath</key>
+		<string>/Users/maurice/etudes/ctbto/allJOBs2015/myjob/3task3Dseismicsensor/texte</string>
+		<key>ExportTransparentColor</key>
+		<string>Automatic</string>
+		<key>GIFExporBackground</key>
+		<string>White Background</string>
+		<key>GIFFDither</key>
+		<string>NO</string>
+		<key>HideExtension</key>
+		<string>NO</string>
+		<key>ICOColorTable</key>
+		<string>256 Best</string>
+		<key>ICOExporBackground</key>
+		<string>No (White) Background</string>
+		<key>JPGExporBackground</key>
+		<string>White Background</string>
+		<key>PDFExporBackground</key>
+		<string>No (Black) Background</string>
+		<key>PDFPagination</key>
+		<string>Single Page</string>
+		<key>PDFXMirror</key>
+		<string>NO</string>
+		<key>PDFYMirror</key>
+		<string>NO</string>
+		<key>PNGColorSpace</key>
+		<string>RGBA</string>
+		<key>PNGExporBackground</key>
+		<string>White Background</string>
+		<key>PNGInterlace</key>
+		<string>NO</string>
+		<key>SVGCompress</key>
+		<string>NO</string>
+		<key>SVGDOMIds</key>
+		<string>YES</string>
+		<key>SVGEmbedImages</key>
+		<string>YES</string>
+		<key>SVGFont</key>
+		<string>SVG</string>
+		<key>SVGGlyphs</key>
+		<string>System Font</string>
+		<key>SVGOverwriteImages</key>
+		<string>NO</string>
+		<key>SVGProfile</key>
+		<string>SVG 1.1</string>
+		<key>SVGTidyFormatting</key>
+		<string>YES</string>
+		<key>TIFExporBackground</key>
+		<string>No (Black) Background</string>
+		<key>TIFFColorSpace</key>
+		<string>RGBA</string>
 	</dict>
 	<key>DKDGrids</key>
 	<dict>
@@ -23511,65 +24719,52 @@
 			<key>GraphicsList</key>
 			<array>
 				<dict>
-					<key>Bounds</key>
-					<string>{{182.930348973, 211.332629324}, {61.587772457, 119.5078125}}</string>
 					<key>Class</key>
-					<string>DKDGroup</string>
+					<string>DKDLine</string>
 					<key>DKDLockInfo</key>
 					<string>14</string>
+					<key>DkBezArrow</key>
+					<string>11</string>
+					<key>DkBezDashPattern</key>
+					<string>8</string>
 					<key>GraphicID</key>
-					<string>165008EF</string>
-					<key>GroupGraphics</key>
-					<array>
-						<dict>
-							<key>Class</key>
-							<string>DKDLine</string>
-							<key>DKDLockInfo</key>
-							<string>14</string>
-							<key>DkBezArrow</key>
-							<string>11</string>
-							<key>DkBezDashPattern</key>
-							<string>8</string>
-							<key>GraphicID</key>
-							<string>F7D341DF</string>
-							<key>GraphicStyle</key>
-							<string>8</string>
-							<key>SVGPath</key>
-							<string>M183.399098972,294.363029623 L205.647027679,211.332629324</string>
-						</dict>
-						<dict>
-							<key>Class</key>
-							<string>DKDLine</string>
-							<key>DKDLockInfo</key>
-							<string>14</string>
-							<key>DkBezArrow</key>
-							<string>11</string>
-							<key>DkBezDashPattern</key>
-							<string>8</string>
-							<key>GraphicID</key>
-							<string>126C22DF</string>
-							<key>GraphicStyle</key>
-							<string>8</string>
-							<key>SVGPath</key>
-							<string>M183.059255222,295.191154623 L235.963433929,330.840441824</string>
-						</dict>
-						<dict>
-							<key>Class</key>
-							<string>DKDLine</string>
-							<key>DKDLockInfo</key>
-							<string>14</string>
-							<key>DkBezArrow</key>
-							<string>11</string>
-							<key>DkBezDashPattern</key>
-							<string>8</string>
-							<key>GraphicID</key>
-							<string>304692DF</string>
-							<key>GraphicStyle</key>
-							<string>8</string>
-							<key>SVGPath</key>
-							<string>M182.930348973,294.806642721 L244.51812143,275.178586172</string>
-						</dict>
-					</array>
+					<string>F7D341DF</string>
+					<key>GraphicStyle</key>
+					<string>8</string>
+					<key>SVGPath</key>
+					<string>M183.399098972,294.363029623 L205.647027679,211.332629324</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>DKDLine</string>
+					<key>DKDLockInfo</key>
+					<string>14</string>
+					<key>DkBezArrow</key>
+					<string>11</string>
+					<key>DkBezDashPattern</key>
+					<string>8</string>
+					<key>GraphicID</key>
+					<string>126C22DF</string>
+					<key>GraphicStyle</key>
+					<string>8</string>
+					<key>SVGPath</key>
+					<string>M183.059255222,295.191154623 L235.963433929,330.840441824</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>DKDLine</string>
+					<key>DKDLockInfo</key>
+					<string>14</string>
+					<key>DkBezArrow</key>
+					<string>11</string>
+					<key>DkBezDashPattern</key>
+					<string>8</string>
+					<key>GraphicID</key>
+					<string>304692DF</string>
+					<key>GraphicStyle</key>
+					<string>8</string>
+					<key>SVGPath</key>
+					<string>M182.930348973,294.806642721 L244.51812143,275.178586172</string>
 				</dict>
 				<dict>
 					<key>Class</key>
@@ -23628,7 +24823,7 @@
 						<string>0</string>
 					</dict>
 					<key>Bounds</key>
-					<string>{{229.390625, 220.6171875}, {57.025390625, 15}}</string>
+					<string>{{200.102740575, 260.452436506}, {57.025390625, 15}}</string>
 					<key>Class</key>
 					<string>DKDTextArea</string>
 					<key>DKDLockInfo</key>
@@ -23667,7 +24862,7 @@
 					<key>GraphicID</key>
 					<string>87A966DF</string>
 					<key>GraphicStyle</key>
-					<string>8</string>
+					<string>24</string>
 					<key>SVGPath</key>
 					<string>M139.338161472,394.206779623 L139.338161472,181.212567138</string>
 				</dict>
@@ -23681,7 +24876,7 @@
 					<key>GraphicID</key>
 					<string>97A966DF</string>
 					<key>GraphicStyle</key>
-					<string>8</string>
+					<string>24</string>
 					<key>SVGPath</key>
 					<string>M138.998317722,395.034904623 L33.908929309,500.124293036</string>
 				</dict>
@@ -23695,7 +24890,7 @@
 					<key>GraphicID</key>
 					<string>A7A966DF</string>
 					<key>GraphicStyle</key>
-					<string>8</string>
+					<string>24</string>
 					<key>SVGPath</key>
 					<string>M138.869411473,394.650392721 L366.465875489,394.650392721</string>
 				</dict>
@@ -24666,8 +25861,6 @@
 					<string>14</string>
 					<key>DkBezArrow</key>
 					<string>11</string>
-					<key>DkBezDashPattern</key>
-					<string>24</string>
 					<key>GraphicID</key>
 					<string>2DA6DEFF</string>
 					<key>GraphicStyle</key>
@@ -24680,6 +25873,8 @@
 					<string>DKDLine</string>
 					<key>DKDLockInfo</key>
 					<string>14</string>
+					<key>DkBezDashPattern</key>
+					<string>24</string>
 					<key>GraphicID</key>
 					<string>ACC3AFFF</string>
 					<key>GraphicStyle</key>
@@ -24692,6 +25887,8 @@
 					<string>DKDLine</string>
 					<key>DKDLockInfo</key>
 					<string>14</string>
+					<key>DkBezDashPattern</key>
+					<string>24</string>
 					<key>GraphicID</key>
 					<string>469CEFFF</string>
 					<key>GraphicStyle</key>
@@ -25183,7 +26380,7 @@
 					<key>AnimateImage</key>
 					<string>NO</string>
 					<key>Bounds</key>
-					<string>{{132.921875, 411.81640625}, {10, 10}}</string>
+					<string>{{132.921875, 421.527517361}, {10, 10}}</string>
 					<key>Class</key>
 					<string>DKDPDFImage</string>
 					<key>CompositeOperation</key>
@@ -25209,7 +26406,7 @@
 						<key>coefficientTX</key>
 						<string>0</string>
 						<key>coefficientTY</key>
-						<string>833.6328125</string>
+						<string>843.343923611</string>
 					</dict>
 					<key>ImageDataDataArchive</key>
 					<string>19</string>
@@ -25228,7 +26425,7 @@
 						<key>coefficientTX</key>
 						<string>0</string>
 						<key>coefficientTY</key>
-						<string>833.6328125</string>
+						<string>843.343923611</string>
 					</dict>
 					<key>LatexitEquation</key>
 					<dict>
@@ -25343,7 +26540,7 @@
 					<key>AnimateImage</key>
 					<string>NO</string>
 					<key>Bounds</key>
-					<string>{{175.5703125, 399.66796875}, {9, 10}}</string>
+					<string>{{158.296758604, 378.12890625}, {9, 10}}</string>
 					<key>Class</key>
 					<string>DKDPDFImage</string>
 					<key>CompositeOperation</key>
@@ -25367,9 +26564,9 @@
 						<key>coefficientM22</key>
 						<string>-1</string>
 						<key>coefficientTX</key>
-						<string>143.16796875</string>
+						<string>125.894414854</string>
 						<key>coefficientTY</key>
-						<string>699.625</string>
+						<string>678.0859375</string>
 					</dict>
 					<key>ImageDataDataArchive</key>
 					<string>12</string>
@@ -25386,9 +26583,9 @@
 						<key>coefficientM22</key>
 						<string>-1</string>
 						<key>coefficientTX</key>
-						<string>143.16796875</string>
+						<string>125.894414854</string>
 						<key>coefficientTY</key>
-						<string>699.625</string>
+						<string>678.0859375</string>
 					</dict>
 					<key>LatexitEquation</key>
 					<dict>
@@ -25498,6 +26695,218 @@
 					<string>32.40234375</string>
 					<key>YImagePoint</key>
 					<string>289.95703125</string>
+				</dict>
+				<dict>
+					<key>Bounds</key>
+					<string>{{122.972327611, 411.601963313}, {33.5135892424, 2.609905410082}}</string>
+					<key>Class</key>
+					<string>DKDArc</string>
+					<key>DKDLockInfo</key>
+					<string>14</string>
+					<key>DkArcAxes</key>
+					<string>{1, 1}</string>
+					<key>DkArcCenter</key>
+					<string>{142.087148018, 342.908854167}</string>
+					<key>DkArcClockwise</key>
+					<string>NO</string>
+					<key>DkArcEndAngle</key>
+					<string>1.367460313217</string>
+					<key>DkArcOrientation</key>
+					<string>0</string>
+					<key>DkArcRadius</key>
+					<string>71.303012583</string>
+					<key>DkArcStartAngle</key>
+					<string>1.842194527711</string>
+					<key>GraphicID</key>
+					<string>A9930BB7</string>
+					<key>GraphicStyle</key>
+					<string>8</string>
+				</dict>
+				<dict>
+					<key>Bounds</key>
+					<string>{{150.286668026, 381.661530081}, {7.709748152205, 30.5017612165}}</string>
+					<key>Class</key>
+					<string>DKDArc</string>
+					<key>DKDLockInfo</key>
+					<string>14</string>
+					<key>DkArcAxes</key>
+					<string>{1.034451265283, 1}</string>
+					<key>DkArcCenter</key>
+					<string>{115.471709376, 405.266629483}</string>
+					<key>DkArcClockwise</key>
+					<string>NO</string>
+					<key>DkArcEndAngle</key>
+					<string>5.671537441131</string>
+					<key>DkArcOrientation</key>
+					<string>0</string>
+					<key>DkArcRadius</key>
+					<string>41.1083004124</string>
+					<key>DkArcStartAngle</key>
+					<string>0.168565251123</string>
+					<key>GraphicID</key>
+					<string>26706CB7</string>
+					<key>GraphicStyle</key>
+					<string>8</string>
+				</dict>
+				<dict>
+					<key>AnimateImage</key>
+					<string>NO</string>
+					<key>Bounds</key>
+					<string>{{105.542376268, 374.971570915}, {15, 15}}</string>
+					<key>Class</key>
+					<string>DKDPDFImage</string>
+					<key>CompositeOperation</key>
+					<string>Source Over</string>
+					<key>CurrentFrame</key>
+					<string>0</string>
+					<key>DKDLockInfo</key>
+					<string>14</string>
+					<key>GraphicID</key>
+					<string>2C5AFDC7</string>
+					<key>GraphicStyle</key>
+					<string>10</string>
+					<key>GraphicTransform</key>
+					<dict>
+						<key>coefficientM11</key>
+						<string>1</string>
+						<key>coefficientM12</key>
+						<string>0</string>
+						<key>coefficientM21</key>
+						<string>0</string>
+						<key>coefficientM22</key>
+						<string>-1</string>
+						<key>coefficientTX</key>
+						<string>48.6744998347</string>
+						<key>coefficientTY</key>
+						<string>724.845844171</string>
+					</dict>
+					<key>ImageDataDataArchive</key>
+					<string>40</string>
+					<key>ImagePercent</key>
+					<string>1</string>
+					<key>ImageTransform</key>
+					<dict>
+						<key>coefficientM11</key>
+						<string>1</string>
+						<key>coefficientM12</key>
+						<string>0</string>
+						<key>coefficientM21</key>
+						<string>0</string>
+						<key>coefficientM22</key>
+						<string>-1</string>
+						<key>coefficientTX</key>
+						<string>48.6744998347</string>
+						<key>coefficientTY</key>
+						<string>724.845844171</string>
+					</dict>
+					<key>LatexitEquation</key>
+					<dict>
+						<key>baseline</key>
+						<string>0</string>
+						<key>color</key>
+						<dict>
+							<key>Blue</key>
+							<string>0</string>
+							<key>ColorSpace</key>
+							<string>NSCalibratedRGBColorSpace</string>
+							<key>Green</key>
+							<string>0</string>
+							<key>Opacity</key>
+							<string>1</string>
+							<key>Red</key>
+							<string>0</string>
+						</dict>
+						<key>date</key>
+						<string>2015-12-11 05:23:33 +0000</string>
+						<key>mode</key>
+						<string>4</string>
+						<key>pointSize</key>
+						<string>20</string>
+						<key>preamble</key>
+						<data>
+						YnBsaXN0MDDUAQIDBAUGLzBYJHZl
+						cnNpb25YJG9iamVjdHNZJGFyY2hp
+						dmVyVCR0b3ASAAGGoKoHCA8QGBkh
+						IigrVSRudWxs0wkKCwwNDlhOU1N0
+						cmluZ1YkY2xhc3NcTlNBdHRyaWJ1
+						dGVzgAKACYADbxDXAFwAZABvAGMA
+						dQBtAGUAbgB0AGMAbABhAHMAcwBb
+						ADEAMABwAHQAXQB7AGEAcgB0AGkA
+						YwBsAGUAfQAKAFwAdQBzAGUAcABh
+						AGMAawBhAGcAZQBbAHUAcwBlAG4A
+						YQBtAGUAcwBdAHsAYwBvAGwAbwBy
+						AH0AIAAlAHAAbwB1AHIAIABsAGEA
+						IABjAG8AdQBsAGUAdQByAAoAXAB1
+						AHMAZQBwAGEAYwBrAGEAZwBlAHsA
+						YQBtAHMAcwB5AG0AYgB9ACAAJQBt
+						AGEAdABoAHMACgBcAHUAcwBlAHAA
+						YQBjAGsAYQBnAGUAewBhAG0AcwBt
+						AGEAdABoAH0AIAAlAG0AYQB0AGgA
+						cwAKAFwAdQBzAGUAcABhAGMAawBh
+						AGcAZQBbAHUAdABmADgAXQB7AGkA
+						bgBwAHUAdABlAG4AYwB9ACAAJQB1
+						AHQAaQBsAGUAIABwAG8AdQByACAA
+						dABhAHAAZQByACAAZABpAHIAZQBj
+						AHQAZQBtAGUAbgB0ACAAbABlAHMA
+						IABjAGEAcgBhAGMAdADoAHIAZQBz
+						ACAAYQBjAGMAZQBuAHQAdQDpAHMA
+						CtMREgoTFRdXTlMua2V5c1pOUy5v
+						YmplY3RzoRSABKEWgAWACFZOU0Zv
+						bnTUGhscCh0eHyBWTlNTaXplWE5T
+						ZkZsYWdzVk5TTmFtZSNAKAAAAAAA
+						ABAQgAaAB1ZNb25hY2/SIyQlJlok
+						Y2xhc3NuYW1lWCRjbGFzc2VzVk5T
+						Rm9udKIlJ1hOU09iamVjdNIjJCkq
+						XE5TRGljdGlvbmFyeaIpJ9IjJCwt
+						XxASTlNBdHRyaWJ1dGVkU3RyaW5n
+						oi4nXxASTlNBdHRyaWJ1dGVkU3Ry
+						aW5nXxAPTlNLZXllZEFyY2hpdmVy
+						0TEyVHJvb3SAAQAIABEAGgAjAC0A
+						MgA3AEIASABPAFgAXwBsAG4AcABy
+						AiMCKgIyAj0CPwJBAkMCRQJHAk4C
+						VwJeAmcCbgJ3AnkCewJ9AoQCiQKU
+						Ap0CpAKnArACtQLCAsUCygLfAuIC
+						9wMJAwwDEQAAAAAAAAIBAAAAAAAA
+						ADMAAAAAAAAAAAAAAAAAAAMT
+						</data>
+						<key>sourceText</key>
+						<data>
+						YnBsaXN0MDDUAQIDBAUGLzBYJHZl
+						cnNpb25YJG9iamVjdHNZJGFyY2hp
+						dmVyVCR0b3ASAAGGoKoHCA8QGBkh
+						IigrVSRudWxs0wkKCwwNDlhOU1N0
+						cmluZ1YkY2xhc3NcTlNBdHRyaWJ1
+						dGVzgAKACYADUU/TERIKExUXV05T
+						LmtleXNaTlMub2JqZWN0c6EUgASh
+						FoAFgAhWTlNGb2501BobHAodHh8g
+						Vk5TU2l6ZVhOU2ZGbGFnc1ZOU05h
+						bWUjQCgAAAAAAAAQEIAGgAdWTW9u
+						YWNv0iMkJSZaJGNsYXNzbmFtZVgk
+						Y2xhc3Nlc1ZOU0ZvbnSiJSdYTlNP
+						YmplY3TSIyQpKlxOU0RpY3Rpb25h
+						cnmiKSfSIyQsLV8QEk5TQXR0cmli
+						dXRlZFN0cmluZ6IuJ18QEk5TQXR0
+						cmlidXRlZFN0cmluZ18QD05TS2V5
+						ZWRBcmNoaXZlctExMlRyb290gAEA
+						CAARABoAIwAtADIANwBCAEgATwBY
+						AF8AbABuAHAAcgB0AHsAgwCOAJAA
+						kgCUAJYAmACfAKgArwC4AL8AyADK
+						AMwAzgDVANoA5QDuAPUA+AEBAQYB
+						EwEWARsBMAEzAUgBWgFdAWIAAAAA
+						AAACAQAAAAAAAAAzAAAAAAAAAAAA
+						AAAAAAABZA==
+						</data>
+						<key>title</key>
+						<string></string>
+					</dict>
+					<key>PageNumber</key>
+					<string>0</string>
+					<key>PostSnowLeopardChangesImage</key>
+					<string>YES</string>
+					<key>XImagePoint</key>
+					<string>56.867876433</string>
+					<key>YImagePoint</key>
+					<string>334.874273256</string>
 				</dict>
 			</array>
 			<key>HideDimensions</key>
@@ -25631,7 +27040,7 @@
 		<string>NO</string>
 	</dict>
 	<key>DKDSaveTimeStamp</key>
-	<string>2015-12-10 17:45:53 +0000</string>
+	<string>2015-12-11 05:23:43 +0000</string>
 	<key>DKDTablet</key>
 	<dict>
 		<key>BrushDynamic</key>
@@ -25698,13 +27107,21 @@
 		<array>
 			<string>HSB_000020</string>
 		</array>
+		<string>ColorStrokeToolbarItemIdentifier_0</string>
+		<array>
+			<string>HSB_000020</string>
+		</array>
+		<string>ColorFillToolbarItemIdentifier_0</string>
+		<array>
+			<string>HSB_0000D0</string>
+		</array>
 	</array>
 	<key>DKDWindowState</key>
 	<dict>
 		<key>CursorMode</key>
 		<string>Nothing</string>
 		<key>DocCenter</key>
-		<string>{223, 360}</string>
+		<string>{279.5, 410.892288862}</string>
 		<key>DocumentFileName</key>
 		<string>/Users/maurice/etudes/ctbto/allJOBs2015/myjob/3task3Dseismicsensor/texte/seismicUandR.ezdraw</string>
 		<key>DrawersOnMainView</key>
@@ -25724,9 +27141,9 @@
 		<key>OutlineDrawing</key>
 		<string>NO</string>
 		<key>WindowLocation</key>
-		<string>258 230 435 482 0 0 1280 777 </string>
+		<string>258 254 647 523 0 0 1280 777 </string>
 		<key>ZoomPercent</key>
-		<string>100.000000</string>
+		<string>101.364326</string>
 	</dict>
 	<key>GroupEdit</key>
 	<string>Fixed</string>

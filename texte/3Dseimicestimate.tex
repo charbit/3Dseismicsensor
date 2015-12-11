@@ -10,12 +10,12 @@
 \usepackage[english]{babel}
 \usepackage{pdfpages}
 %====================================
- \textheight 24cm
-% \doublespace
-  \oddsidemargin -0.5cm
-  \evensidemargin +1.5cm
-  \textwidth 15cm
- \topmargin -2cm
+% \textheight 22 cm
+%% \doublespace
+%  \oddsidemargin -0.5cm
+%  \evensidemargin +1.5cm
+%  \textwidth 16 cm
+% \topmargin 0cm
 %============================================
 % Figures
 %============================================
@@ -178,13 +178,17 @@
 
  \bibliographystyle{plain} 
 
+
 \begin{document}
  \sloppy
+\tableofcontents
+
+
 %=======================================================
 %=======================================================
 \section{Introduction}
 
-\figscale{seismicUandR.pdf}{The 3 steering vectors of the SUT and the SREF are unitary, but not exactly orthogonal. Its components are referred w.r.t. a common orthonormal coordinate system. Any unitary vector can be characterized, for example,  by 2 angles, one called azimuth $a$ and other elevation $e$. The azimut goes from $0$ to $360°$ and the elevation from $-90°$ to $90°$.}{fig:seismicUandR}{0.6}
+\figscale{seismicUandR.pdf}{The 3 steering vectors of the SUT and SREF measurements are unitary, but not exactly orthogonal. Their components are referred w.r.t. a common orthonormal coordinate system $(O,x,y,z)$. Any unitary vector can be characterized by only two scalars, as for example  by 2 angles, one called azimuth $a$ and other elevation $e$. The azimuth goes from $0$ to $360°$ and the elevation from $-90°$ to $90°$.}{fig:seismicUandR}{0.6}
 
 A 3D seismic device measures the three components of an acceleration vector in three specific directions attached to the device. These three directions form a trihedron almost orthogonal but not exactly. We denote $v_{u,1}$,  $v_{u,2}$,  $v_{u,3}$ the unitary vectors of these 3 directions of the seismic device under test (SUT), and  $v_{r,1}$,  $v_{r,2}$,  $v_{r,3}$ those of the reference system (SREF). All vectors are referred to any given orthonormal coordinate system. We index by $x$, $y$ and $z$ the coordinates w.r.t. this coordinate system (see figure \ref{fig:seismicUandR}).
 
@@ -492,18 +496,18 @@ It is worth to notice that, if we assume that the frequency response $H_{u}(f)$ 
 
 %=====================================
 %=====================================
-\appendix
-\section{Function}
+\section{Codes}
+
+\subsection{Function {\tt extract1direction.m}}
 
 {\tiny \verbatiminput{../progs/extract1direction.m}}
 
-
-\section{Program}
+\subsection{Program {\tt estimate3Dsystem.m}}
 
 {\tiny \verbatiminput{../progs/estimate3Dsystem.m}}
 
 
-\subsubsection{Useful function}
+\subsection{Useful function {\tt matrixtrihedron.m}}
 
 {\tiny \verbatiminput{../progs/matrixtrihedron.m}}
 
