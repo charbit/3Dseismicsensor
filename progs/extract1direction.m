@@ -22,7 +22,9 @@ function vmin = extract1direction(...
 %           unitary vector in the direction
 %           of the selected SUT channel solution 
 %           of the least square problem.
-% 
+% Used functions:
+%      - roots, poly, norm from Matlab
+%
 %=======================================================================
 XUTfk   = fft(filteredsignalsUTk,[],2);
 XREFf   = fft(filteredsignalsREF,[],2);
