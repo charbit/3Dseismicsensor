@@ -1,17 +1,17 @@
 clear
 % attention the signal vectors and its Fourier transforms
-% are ROW vetors.
+% are ROW vectors.
 
 load('year2015month10day22.mat')
 
-[num,den] = butter(2,2*[0.01 1/4]);
+ [num,den] = butter(2,2*[1/4]);
+
 %======= SREF
 
 % theoretically if azimutREF_deg-elevationREF_deg 
 % stays equal to +/-90°, results are unchanged
 Ox.azimutREF_deg    = 0;
 Ox.elevationREF_deg = 0;
-
 Oy.azimutREF_deg    = 90;
 Oy.elevationREF_deg = 0;
 
@@ -27,7 +27,7 @@ elevationREF_deg    = [Ox.elevationREF_deg; ...
 VREF = matrixtrihedron(azimutREF_deg, elevationREF_deg);
 grammianVREF = VREF*VREF';
 %==================================
-N_sec     = 1000;
+N_sec     = 300;
 T         = size(signals_centered,1);
 N         = fix(Fs_Hz*N_sec);
 Nshift    = fix(N*0.5);

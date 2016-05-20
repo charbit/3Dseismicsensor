@@ -32,8 +32,10 @@ yurk    = (XUTfk ./ HUTfk) ; % deconvolution
 yREFf   = (XREFf ./ HREFf) ; % deconvolution
 % see document for notation
 Z       = yREFf'/(Vr');
+
 ZHZ     = Z'*Z;
 [UU,DD] = eig(ZHZ);
+
 w       = Z'*(yurk');
 
 mu1     = DD(1,1);
@@ -64,6 +66,7 @@ Polylambda(6)=2*mu1^2*mu2^2*mu3 + 2*mu1^2*mu2*mu3^2 - ...
     2*gamma1*mu2*mu3^2;
 Polylambda(7)=mu1^2*mu2^2*mu3^2 - gamma3*mu1^2*mu2^2 - ...
     gamma2*mu1^2*mu3^2 - gamma1*mu2^2*mu3^2;
+
 
 nbroots = 6;
 rootsP  = roots(Polylambda);
